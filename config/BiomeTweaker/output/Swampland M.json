@@ -8,10 +8,8 @@
   "Height Variation": 0.3,
   "Top Block": "minecraft:grass",
   "Filler Block": "minecraft:dirt",
-  "Actual Filler Block": "minecraft:stone",
-  "Liquid Filler Block": "minecraft:water",
-  "Grass Color": "Not Set",
-  "Foliage Color": "Not Set",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
   "Water Color": "14745518",
   "Temperature": 0.8,
   "Humidity": 0.9,
@@ -22,6 +20,7 @@
     "WET",
     "SWAMP"
   ],
+  "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntitySheep",
@@ -168,5 +167,6 @@
       "Max Group Count": 8
     }
   ],
+  "Spawn Biome": false,
   "Tweaked": false
 }

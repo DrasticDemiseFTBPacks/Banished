@@ -8,10 +8,8 @@
   "Height Variation": 1.2125001,
   "Top Block": "minecraft:grass",
   "Filler Block": "minecraft:dirt",
-  "Actual Filler Block": "minecraft:stone",
-  "Liquid Filler Block": "minecraft:water",
-  "Grass Color": "Not Set",
-  "Foliage Color": "Not Set",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
   "Water Color": "16777215",
   "Temperature": 1.0,
   "Humidity": 0.0,
@@ -25,6 +23,7 @@
     "SAVANNA",
     "HILLS"
   ],
+  "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntitySheep",
@@ -171,5 +170,6 @@
       "Max Group Count": 8
     }
   ],
+  "Spawn Biome": false,
   "Tweaked": false
 }

@@ -8,10 +8,8 @@
   "Height Variation": 0.2,
   "Top Block": "minecraft:grass",
   "Filler Block": "minecraft:dirt",
-  "Actual Filler Block": "minecraft:stone",
-  "Liquid Filler Block": "minecraft:water",
-  "Grass Color": "Not Set",
-  "Foliage Color": "Not Set",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
   "Water Color": "13373832",
   "Temperature": 0.5,
   "Humidity": 0.5,
@@ -22,6 +20,14 @@
     "MAGICAL",
     "WASTELAND"
   ],
+  "BiomeManager Entries": {
+    "WARM Weights": [
+      2
+    ],
+    "COOL Weights": [
+      2
+    ]
+  },
   "Spawnable Creatures": [
     {
       "Entity Class": "lycanite.lycanitesmobs.desertmobs.entity.EntityJoustAlpha",
@@ -143,5 +149,6 @@
       "Max Group Count": 8
     }
   ],
+  "Spawn Biome": false,
   "Tweaked": false
 }
