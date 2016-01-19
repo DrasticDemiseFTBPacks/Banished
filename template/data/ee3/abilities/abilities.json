@@ -1,0 +1,901 @@
+{
+    "notLearnable": [
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAdamantine",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAlduorite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAluminum",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAmber",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAmethyst",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAquamarine",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreArdite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAstralSilver",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreAtlarus",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreBeryl",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreBlueTopaz",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCarmot",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCavenium",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCeruclase",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreChaos",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreChimerite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCinnabar",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCoal",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCobalt",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCompass",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreCopper",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreDeepIron",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreDiamond",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreEmerald",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreEssence",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreEximite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreFZDarkIron",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreGarnet",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreGold",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreHeliodor",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreIgnatius",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfuscolium",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedAir",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedEarth",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedEntropy",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedFire",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedOrder",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreInfusedWater",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreIolite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreIron",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreKalendrite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreLapis",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreLead",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreLemurite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreManganese",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreMeutoite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreMidasium",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreMithril",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreMoonstone",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreMorganite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreNickel",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreOnyx",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreOrichalcum",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreOureclase",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "orePeridot",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "orePlatinum",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "orePrometheum",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreQuartz",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreRedstone",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreRefinedCavenium",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreRubracium",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreRuby",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreSanguinite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreSapphire",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreShadowIron",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreSilver",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreSteel",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreSunstone",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreTin",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreTopaz",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreVinteum",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreVulcanite",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreVyroxeres",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "orestack",
+            "stackSize": 1,
+            "objectData": {
+                "oreName": "oreZinc",
+                "stackSize": 1
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:gold_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:iron_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:coal_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:lapis_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:diamond_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:redstone_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:emerald_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:quartz_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 1
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 2
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 3
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 4
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 5
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 6
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:blockCustomOre",
+                "itemDamage": 7
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "kegare.caveworld:cavenium_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "kegare.caveworld:cavenium_ore",
+                "itemDamage": 1
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "kegare.caveworld:gem_ore",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 1
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 2
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 3
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 4
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 5
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 6
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 7
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 8
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 9
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 10
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:GemOre",
+                "itemDamage": 11
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:ChaosOre",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 0
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 1
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 2
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 3
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 4
+            }
+        },
+        {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "kegare.caveworld:ore_compass",
+                "itemDamage": 0
+            }
+        }
+    ],
+    "notRecoverable": []
+}

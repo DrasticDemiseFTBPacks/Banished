@@ -1,0 +1,4 @@
+I probably broke these. If this is the case, poke me on the forums. I suck with server files. (blame gideonseymour) Also, if you create a public server,
+please PM me on the forums I would love to list it!
+
+If you happen to find that you are not spawning in the correct template, move the perfectspawn.json into the world folder or travel/TP to the coordinates in the perfectspawn.json

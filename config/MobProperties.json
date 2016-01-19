@@ -1,0 +1,18 @@
+{
+  "_comment": "This is the default Mop Properties file. When this mod generates a default file for any mob, it will be an auto-formatted copy of this file. Remember, comments outside of functions (such as this one) will not be copied.",
+  "drops": [
+    {
+      "_comment": "makes drop iron",
+      "function": "if_recently_hit",
+      "functions": [
+		{
+          "_comment": "add iron drop",
+          "function": "add",
+          "id": "Thaumcraft:ItemResource:9",
+          "count": 0.05
+		}
+	]
+}
+],
+  "stats": []
+}

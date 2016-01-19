@@ -1,0 +1,20 @@
+player_permissions
+111 DrasticDemise
+
+whitelist
+Player
+UtilityMobs.GenericGolem
+Silverfish
+Skeleton
+Slime
+Spider
+Witch
+Zombie
+shadowmobs.phantom
+infernomobs.cinder
+shadowmobs.shade
+shadowmobs.grue
+shadowmobs.chupacabra
+shadowmobs.geist
+
+blacklist

@@ -1,0 +1,25 @@
+{
+    "events":
+            [
+  {
+            "event_type": "TOSS",
+            "issuer": "ALL_PLAYERS",
+            "modid": "customitems",
+            "name": "memory_fragment",
+            "meta": "0",
+            "tasks":
+                    [   
+						{					
+						"task_type": "ITEM_NEW_LIFE",
+						"newLife": "3"
+						},
+						{
+							"task_type": "COMMAND",
+							"command": "/tc aspect @p all 1",
+							"ignorePrivilages": "true"
+						}
+						
+                    ]
+    }
+]
+}

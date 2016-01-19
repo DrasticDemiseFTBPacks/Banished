@@ -1,0 +1,18 @@
+{
+  "_name": "junglemobs.tarantula",
+  "drops": [
+    {
+      "_comment": "makes drop iron",
+      "function": "if_recently_hit",
+      "functions": [
+        {
+          "_comment": "add iron drop",
+          "function": "add",
+          "id": "Thaumcraft:ItemResource:9",
+          "count": 0.05
+        }
+      ]
+    }
+  ],
+  "stats": []
+}

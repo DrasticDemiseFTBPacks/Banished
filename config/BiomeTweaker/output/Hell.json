@@ -1,0 +1,194 @@
+
+{
+  "ID": 8,
+  "Name": "Hell",
+  "Class": "net.minecraft.world.biome.BiomeGenHell",
+  "Color": 16711680,
+  "Root Height": 0.1,
+  "Height Variation": 0.2,
+  "Top Block": "minecraft:grass",
+  "Filler Block": "minecraft:dirt",
+  "Actual Filler Block": "minecraft:stone",
+  "Liquid Filler Block": "minecraft:water",
+  "Grass Color": "Not Set",
+  "Foliage Color": "Not Set",
+  "Water Color": "16777215",
+  "Temperature": 2.0,
+  "Humidity": 0.0,
+  "Water Tint": 16777215,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "HOT",
+    "DRY",
+    "NETHER"
+  ],
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityGhast",
+      "Weight": 50,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityPigZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityMagmaCube",
+      "Weight": 1,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "am2.entities.EntityHecate",
+      "Weight": 4,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "am2.entities.EntityDarkling",
+      "Weight": 5,
+      "Min Group Count": 4,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "am2.entities.EntityFireElemental",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityArcherZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityCavenicSkeleton",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "gravestone.entity.monster.EntityWitherSkullCrawler",
+      "Weight": 3,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "toast.specialMobs.entity.creeper.EntityFireCreeper",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "thaumcraft.common.entities.monster.EntityFireBat",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    },
+    {
+      "Entity Class": "thaumcraft.common.entities.monster.EntityWisp",
+      "Weight": 5,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityMasterCavenicSkeleton",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityPinky",
+      "Weight": 30,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityPinky",
+      "Weight": 30,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityAstaroth",
+      "Weight": 10,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityAstaroth",
+      "Weight": 10,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.shadowmobs.entity.EntityPhantom",
+      "Weight": 40,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.shadowmobs.entity.EntityPhantom",
+      "Weight": 40,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityNetherSoul",
+      "Weight": 30,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityNetherSoul",
+      "Weight": 30,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityTrite",
+      "Weight": 50,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityTrite",
+      "Weight": 50,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityBelph",
+      "Weight": 40,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityBelph",
+      "Weight": 40,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityBehemoth",
+      "Weight": 10,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.demonmobs.entity.EntityBehemoth",
+      "Weight": 10,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Tweaked": false
+}

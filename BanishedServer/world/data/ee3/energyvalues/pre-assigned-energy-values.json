@@ -1,0 +1,730 @@
+[
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:hardened_clay",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:gunpowder",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 64.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:glowstone_dust",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 128.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8193
+            }
+        },
+        "energyValue": {
+            "value": 1374.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8194
+            }
+        },
+        "energyValue": {
+            "value": 19.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8195
+            }
+        },
+        "energyValue": {
+            "value": 272.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8196
+            }
+        },
+        "energyValue": {
+            "value": 51.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8197
+            }
+        },
+        "energyValue": {
+            "value": 620.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8198
+            }
+        },
+        "energyValue": {
+            "value": 623.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8200
+            }
+        },
+        "energyValue": {
+            "value": 72.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8201
+            }
+        },
+        "energyValue": {
+            "value": 264.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8202
+            }
+        },
+        "energyValue": {
+            "value": 83.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8204
+            }
+        },
+        "energyValue": {
+            "value": 115.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:potion",
+                "itemDamage": 8206
+            }
+        },
+        "energyValue": {
+            "value": 687.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:andesite",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:diorite",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 1
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 2
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 3
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 4
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 5
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 6
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 7
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 8
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 9
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 10
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 11
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 12
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 13
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 14
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 15
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock2",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:granite",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:limestone",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:marble",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:vinteumOre",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 32.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "arsmagica2:itemOre",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 32.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 1
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 2
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 3
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 4
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "Thaumcraft:ItemShard",
+                "itemDamage": 5
+            }
+        },
+        "energyValue": {
+            "value": 256.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 1
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 2
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 3
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 4
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 5
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 6
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 7
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 8
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 9
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 10
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:Gem",
+                "itemDamage": 11
+            }
+        },
+        "energyValue": {
+            "value": 1024.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "SilentGems:CraftingMaterials",
+                "itemDamage": 3
+            }
+        },
+        "energyValue": {
+            "value": 2048.0
+        }
+    }
+]

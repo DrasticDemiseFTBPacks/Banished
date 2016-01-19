@@ -1,0 +1,46 @@
+{
+"items": [
+        {
+            "maxStackSize": 1,
+            "textureName": "dungeoncaller",
+            "name": "Dungeon Caller"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "memoryfragment",
+            "name": "Memory Fragment"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "helpmyhqmbroke",
+            "name": "Help My HQM Broke!"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonWarden",
+            "name": "Vinculum"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonTaintacle",
+            "name": "Vitium"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonPortal",
+            "name": "Iter"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonLeader",
+            "name": "Ira"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonGolem",
+            "name": "Superbia"            
+        }
+    ],
+"blocks": [         
+]
+}

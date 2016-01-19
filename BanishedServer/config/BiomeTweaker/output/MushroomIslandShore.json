@@ -1,0 +1,69 @@
+
+{
+  "ID": 15,
+  "Name": "MushroomIslandShore",
+  "Class": "net.minecraft.world.biome.BiomeGenMushroomIsland",
+  "Color": 10486015,
+  "Root Height": 0.0,
+  "Height Variation": 0.025,
+  "Top Block": "minecraft:mycelium",
+  "Filler Block": "minecraft:dirt",
+  "Actual Filler Block": "minecraft:stone",
+  "Liquid Filler Block": "minecraft:water",
+  "Grass Color": "Not Set",
+  "Foliage Color": "Not Set",
+  "Water Color": "16777215",
+  "Temperature": 0.9,
+  "Humidity": 1.0,
+  "Water Tint": 16777215,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "MUSHROOM",
+    "BEACH"
+  ],
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityMooshroom",
+      "Weight": 8,
+      "Min Group Count": 4,
+      "Max Group Count": 8
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityArcherZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityCavenicSkeleton",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.kegare.caveworld.entity.EntityMasterCavenicSkeleton",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "lycanite.lycanitesmobs.shadowmobs.entity.EntityPhantom",
+      "Weight": 4,
+      "Min Group Count": 0,
+      "Max Group Count": 0
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    }
+  ],
+  "Tweaked": false
+}

@@ -1,0 +1,158 @@
+[
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "minecraft:hardened_clay",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 1.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 0
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 1
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 2
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 3
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 4
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 5
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 6
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 7
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 8
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 9
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    },
+    {
+        "wrappedStack": {
+            "type": "itemstack",
+            "stackSize": 1,
+            "objectData": {
+                "itemName": "chisel:fantasyblock",
+                "itemDamage": 10
+            }
+        },
+        "energyValue": {
+            "value": 50.0
+        }
+    }
+]
