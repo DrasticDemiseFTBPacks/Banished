@@ -1,0 +1,1643 @@
+{
+  "name": "A Creative Magic",
+  "description": "Bending mana to my needs.",
+  "quests": [
+    {
+      "name": "Knowledge",
+      "description": "By placing a book in an item frame above a block of liquid etherium, I can pull knowledge from the etherium into one manual.",
+      "x": 158,
+      "y": 96,
+      "icon": {
+        "id": "arsmagica2:ArcaneCompendium"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "A bucket of liquid etherium can be crafted.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:ArcaneCompendium"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "All Knowing",
+      "description": "The occulus is able to provide insight on the powers that I have learned so far. As I become stronger, I can further my knowledge of the arcane. I can also use what I have learned and create a base for a new spell with the inscription table.",
+      "x": 156,
+      "y": 60,
+      "icon": {
+        "id": "arsmagica2:occulus"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:occulus"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:InscriptionTable"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "amount": 10
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 4,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Spell Crafting",
+      "description": "To focus what I have learned into a power I must construct an altar. The altar can be upgraded with rare materials to allow it to create stronger spells.",
+      "x": 156,
+      "y": 21,
+      "icon": {
+        "id": "arsmagica2:CraftingAltar"
+      },
+      "prerequisites": [
+        "All Knowing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The Crafting Altar section under Structures in the Arcane Compendium will provide step by step instructions on the construction.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:magicWall"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "arsmagica2:CraftingAltar"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 34
+            },
+            {
+              "item": {
+                "id": "minecraft:stone_stairs"
+              },
+              "required": 12
+            },
+            {
+              "item": {
+                "id": "minecraft:glass"
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "minecraft:lever"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:blockLectern"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:writable_book",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Earth Guardian",
+      "description": "A being of sturdy armor and staggering blows, a tough fight lays ahead.",
+      "x": 92,
+      "y": 62,
+      "icon": {
+        "id": "arsmagica2:earth_armor",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Water Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "The Compendium provides knowledge of all bosses.",
+          "mobs": [
+            {
+              "name": "Earth Guardian",
+              "icon": {
+                "id": "arsmagica2:earth_armor",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossEarthGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 18
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Air Guardian",
+      "description": "A monster with a powerful knockback and speed.",
+      "x": 72,
+      "y": 63,
+      "icon": {
+        "id": "arsmagica2:air_sled",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Earth Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "The Compendium provides knowledge of all bosses.",
+          "mobs": [
+            {
+              "name": "Air Guardian",
+              "icon": {
+                "id": "arsmagica2:air_sled",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossAirGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 18,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Water Guardian",
+      "description": "A creature of water with a bite that pierces the strongest armor. Mundane metal will have no value here.",
+      "x": 83,
+      "y": 83,
+      "icon": {
+        "id": "arsmagica2:water_orbs",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Elemental Battle"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "The Compendium provides knowledge of all bosses.",
+          "mobs": [
+            {
+              "name": "Water Guardian",
+              "icon": {
+                "id": "arsmagica2:water_orbs",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossWaterGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Arcane Guardian",
+      "description": "A battle of magic awaits.",
+      "x": 60,
+      "y": 82,
+      "icon": {
+        "id": "arsmagica2:arcane_spellbook",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Air Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "The Compendium provides knowledge of all bosses.",
+          "mobs": [
+            {
+              "name": "Arcane Guardian",
+              "icon": {
+                "id": "arsmagica2:arcane_spellbook",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossArcaneGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Life Guardian",
+      "description": "A noble protecting beast.",
+      "x": 38,
+      "y": 81,
+      "icon": {
+        "id": "arsmagica2:lifeWard"
+      },
+      "prerequisites": [
+        "Arcane Guardian",
+        "Summoning"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "longDescription": "The Compendium provides knowledge of all bosses.",
+          "mobs": [
+            {
+              "name": "Life Guardian",
+              "icon": {
+                "id": "arsmagica2:lifeWard"
+              },
+              "mob": "arsmagica2.BossLifeGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 20
+        }
+      ]
+    },
+    {
+      "name": "Armor Imbuement",
+      "description": "While magical robes provide a decent protection, they have much to be desired. I can now infuse the experience I earn from slaying monsters into my armor, providing new powers.",
+      "x": 104,
+      "y": 131,
+      "icon": {
+        "id": "arsmagica2:armorInfuser"
+      },
+      "prerequisites": [
+        "Magical Robes"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:armorInfuser"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:experience_bottle",
+          "amount": 40
+        },
+        {
+          "id": "arsmagica2:essence",
+          "damage": 9
+        }
+      ]
+    },
+    {
+      "name": "Calefactoring",
+      "description": "A unique tool, it has a tendency to double food and ores when supplied with vinteum dust.",
+      "x": 191,
+      "y": 124,
+      "icon": {
+        "id": "arsmagica2:calefactor"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:calefactor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Etherium",
+      "description": "Some spells require the magical powers of Etherium. The most basic etherium is the neutral type generated from a regular obelisk by burning Vinteum Dust.",
+      "x": 196,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:obelisk"
+      },
+      "prerequisites": [
+        "Spell Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The Compendium offers all knowledge about the Obelisk.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:obelisk"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17,
+          "amount": 2
+        },
+        {
+          "id": "arsmagica2:magitechStaff"
+        },
+        {
+          "id": "arsmagica2:crystal_wrench"
+        }
+      ]
+    },
+    {
+      "name": "More Resources",
+      "description": "The magical flora is all but gone from this desolate place, however the Aura lends me an answer.",
+      "x": 115,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:Aum"
+      },
+      "prerequisites": [
+        "Spell Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Wake Blooms can be grown by using a growth spell in a pool of water.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:TarmaRoot"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:Aum"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:wakebloom"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:saplingWitchwood"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:blueOrchid"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:desertNova"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:TarmaRoot",
+          "amount": 4
+        },
+        {
+          "id": "arsmagica2:Aum",
+          "amount": 4
+        },
+        {
+          "id": "arsmagica2:blueOrchid",
+          "amount": 4
+        },
+        {
+          "id": "arsmagica2:desertNova",
+          "amount": 4
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:WitchwoodLog",
+          "amount": 20
+        },
+        {
+          "id": "arsmagica2:wakebloom",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Elemental Battle",
+      "description": "The old ways of attracting some of the elemental guardians are no longer possible in this cave world, however I may be able to drain my energy to force it here.",
+      "x": 119,
+      "y": 87,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 16
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 16
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Summoning",
+      "description": "Much like the water guardian, the life guardian requires resources out of my grasp.",
+      "x": 50,
+      "y": 62,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 20
+      },
+      "prerequisites": [
+        "Arcane Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 20
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Essence Refining",
+      "description": "Each item has a special underlying base to its makeup. Most items fall into simple elemental categories, while others are more unique such as the Ender and Arcane. By molding these items together, I can create a pure form of essence, necessary for some spells.",
+      "x": 156,
+      "y": 140,
+      "icon": {
+        "id": "arsmagica2:essenceRefiner"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:essenceRefiner"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 2,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "More Mana",
+      "description": "Excessive spell casting leads to a quick drain of my mana, however using my dark power can create a small potion to give me a boost.",
+      "x": 137,
+      "y": 40,
+      "icon": {
+        "id": "arsmagica2:manaPotionBundle",
+        "damage": 771
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:manaPotionBundle",
+          "damage": 259
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Reconstructing",
+      "description": "The etherium has a special property of self-repair it seems. By focusing the etherium on the weak points in my tools, it can slowly be repaired back to new.",
+      "x": 247,
+      "y": 22,
+      "icon": {
+        "id": "arsmagica2:blockArcaneReconstructor"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:blockArcaneReconstructor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:essenceConduit",
+          "amount": 4
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Deconstructing",
+      "description": "As I progress in my power I am starting to have less of a use for my old spells. Instead of allowing them to gather dust, I have created a machine that can turn the spell back into their primal recipe.",
+      "x": 158,
+      "y": 183,
+      "icon": {
+        "id": "arsmagica2:arcaneDeconstructor"
+      },
+      "prerequisites": [
+        "Essence Refining"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:arcaneDeconstructor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:essence",
+          "damage": 4,
+          "amount": 3
+        },
+        {
+          "id": "arsmagica2:essence",
+          "damage": 3,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Work Table",
+      "description": "As I tinker with complex blocks it can become annoying to constantly move items between crafting tables and chests. With a quick modification, it has become both!",
+      "x": 189,
+      "y": 57,
+      "icon": {
+        "id": "arsmagica2:magiciansWorkbench"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:magiciansWorkbench"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:workbenchUpgrade"
+        }
+      ]
+    },
+    {
+      "name": "Complex Spells",
+      "description": "The inscription table can be upgraded by adding various magical items on top. Each upgrade allows me to create spells with more modifiers.",
+      "x": 199,
+      "y": 89,
+      "icon": {
+        "id": "arsmagica2:inscriptionUpgrade",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:inscriptionUpgrade"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:inscriptionUpgrade",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:inscriptionUpgrade",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Magical Robes",
+      "description": "Metal armors are clunky and difficult to move in. By creating magical robes, I can focus my spells to be more effective and can cast them more often.",
+      "x": 127,
+      "y": 117,
+      "icon": {
+        "id": "arsmagica2:mageArmor"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:mageArmor"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageHood"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageLeggings"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "arsmagica2:mageBoots"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_book",
+          "amount": 4,
+          "nbt": "{StoredEnchantments:[0:{lvl:1s,id:101s}]}"
+        },
+        {
+          "id": "minecraft:experience_bottle",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Light Etherium",
+      "description": "Aside from the neutral etherium is the light etherium. Light etherium is passively generated by a celestial prism, though it is generated rather slowly. The trick however, is obtaining a celestial prism. By performing the ritual of purification on an obelisk, it will turn into a celestial prism.",
+      "x": 227,
+      "y": 68,
+      "icon": {
+        "id": "arsmagica2:celestialPrism"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Moonstone can be found in the same generation as diamond.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:quartz_block"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "arsmagica2:vinteumOre",
+                "damage": 5
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 7,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Dark Etherium",
+      "description": "The black aurum destroys mobs in return for dark etherium, a powerful substance that can speed up machines or create dark spells. To obtain a black aurum, I must perform the ritual of corruption on an obelisk.",
+      "x": 253,
+      "y": 49,
+      "icon": {
+        "id": "arsmagica2:blackAurem"
+      },
+      "prerequisites": [
+        "Etherium"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Sunstone can be found in a Hell biome or in the same generation as diamonds.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:nether_brick"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "arsmagica2:vinteumOre",
+                "damage": 8
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Shocking",
+      "description": "To attract such a creature would be foolish, but necessary.",
+      "x": 48,
+      "y": 100,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 21
+      },
+      "prerequisites": [
+        "Life Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 21
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Lightning Guardian",
+      "description": "A protector of the weather with a temper of a storm.",
+      "x": 71,
+      "y": 104,
+      "icon": {
+        "id": "arsmagica2:lightningCharm"
+      },
+      "prerequisites": [
+        "Shocking"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Lightning Guardian",
+              "icon": {
+                "id": "arsmagica2:lightningCharm"
+              },
+              "mob": "arsmagica2.BossLightningGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Cold Snap",
+      "description": "A Cold Summoning.",
+      "x": 25,
+      "y": 61,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 17
+      },
+      "prerequisites": [
+        "Life Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 17
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Winter Guardian",
+      "description": "A foe of pure ice who can destroy the toughest opponent.",
+      "x": 33,
+      "y": 40,
+      "icon": {
+        "id": "arsmagica2:winter_arm",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Cold Snap"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Winter Guardian",
+              "icon": {
+                "id": "arsmagica2:winter_arm",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossWinterGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Fire Guardian",
+      "description": "The ruler of the nether. Good luck.",
+      "x": 45,
+      "y": 21,
+      "icon": {
+        "id": "arsmagica2:fire_ears",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "The Burning"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Fire Guardian",
+              "icon": {
+                "id": "arsmagica2:fire_ears",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossFireGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Cruel Harvest",
+      "description": "A desperate summoning that will soon reap the rewards.",
+      "x": 24,
+      "y": 104,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 13
+      },
+      "prerequisites": [
+        "Life Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 13
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "The End.",
+      "description": "Dark days await if I am to fail.",
+      "x": 57,
+      "y": 41,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 22
+      },
+      "prerequisites": [
+        "Fire Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 5,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 22
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -25
+        }
+      ]
+    },
+    {
+      "name": "The Burning",
+      "description": "A fiery summoning.",
+      "x": 22,
+      "y": 19,
+      "icon": {
+        "id": "arsmagica2:AMSpawnEgg",
+        "damage": 19
+      },
+      "prerequisites": [
+        "Winter Guardian"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 12
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:AMSpawnEgg",
+          "damage": 19
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Nature Guardian",
+      "description": "A beast with a devastating swing.",
+      "x": 38,
+      "y": 122,
+      "icon": {
+        "id": "arsmagica2:natureScythe",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Cruel Harvest"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Nature Guardian",
+              "icon": {
+                "id": "arsmagica2:natureScythe",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossNatureGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Ender Guardian",
+      "description": "The End.",
+      "x": 67,
+      "y": 21,
+      "icon": {
+        "id": "arsmagica2:enderBoots"
+      },
+      "prerequisites": [
+        "The End."
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Ender Guardian",
+              "icon": {
+                "id": "arsmagica2:enderBoots"
+              },
+              "mob": "arsmagica2.BossEnderGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 5
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Arcane Guardian",
+      "description": "A master of the magical arts, take care.",
+      "x": 12,
+      "y": 84,
+      "icon": {
+        "id": "arsmagica2:arcane_spellbook",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Life Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Arcane Guardian",
+              "icon": {
+                "id": "arsmagica2:arcane_spellbook",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}]}"
+              },
+              "mob": "arsmagica2.BossArcaneGuardian",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 19,
+          "amount": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "arsmagica2:rune",
+          "damage": 18
+        },
+        {
+          "id": "arsmagica2:rune",
+          "damage": 17
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Clear Mind",
+      "description": "As I dabble with magical spells I notice that my body takes on their own properties, some even negative. I can cleanse myself of my affinities at a cost of dark power if I wish to take on a different affinity or simply clear myself of the negative affinities.",
+      "x": 121,
+      "y": 59,
+      "icon": {
+        "id": "arsmagica2:bookAffinity"
+      },
+      "prerequisites": [
+        "Knowledge"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 8,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 8,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:bookAffinity"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -50
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

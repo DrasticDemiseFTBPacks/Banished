@@ -1,0 +1,1651 @@
+{
+  "name": "A Pure Magic",
+  "description": "Power in unsuspecting things.",
+  "quests": [
+    {
+      "name": "Fertile Ground",
+      "description": "The old world once had an assortment of magical flowers across the lands that could be used in a variety of magical items. It may be possible to obtain the flowers once again by using a special mixture on dirt.",
+      "x": 159,
+      "y": 191,
+      "icon": {
+        "id": "Botania:fertilizer"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Casting grow spells on dirt will spawn flowers.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lexicon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:fertilizer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:fertilizer",
+          "amount": 32
+        },
+        {
+          "id": "Botania:flowerBag"
+        },
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"Franklin413\"}}"
+        },
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"Kortnai\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Flower Magic",
+      "description": "By combining the petals of the magical flowers in a petal apothecary, I can create a new flower or item.",
+      "x": 158,
+      "y": 160,
+      "icon": {
+        "id": "Botania:altar"
+      },
+      "prerequisites": [
+        "Fertile Ground"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "After throwing in the proper recipe, throw seeds into the water to finish the craft.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:altar"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"ConfigsPlease\"}}"
+        },
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"Mechalith\"}}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:petal",
+          "damage": 10,
+          "amount": 10
+        },
+        {
+          "id": "Botania:petal",
+          "damage": 14,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Purification",
+      "description": "The white flowers have a unique property of purifying the makeup of logs and stone that are placed nearby. ",
+      "x": 158,
+      "y": 134,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"puredaisy\"}"
+      },
+      "prerequisites": [
+        "Flower Magic"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"puredaisy\"}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "The wand of the forest is used for binding and altering botania blocks.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:twigWand",
+                "nbt": "{color1:0,color2:0}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:livingwood",
+          "amount": 16
+        },
+        {
+          "id": "Botania:livingrock",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Mana",
+      "description": "The mana capacity of flowers and spreaders is low and cannot be directly used by another flower. To solve this issue, I must create a mana pool that can store enough mana for my future needs.",
+      "x": 157,
+      "y": 109,
+      "icon": {
+        "id": "Botania:pool"
+      },
+      "prerequisites": [
+        "Purification"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The mana pool will store the mana that I have gathered from nearby producing flowers. Mana spreaders will transport the mana to a pool when the spreader is pointed and bound to the pool.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:spreader"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:log",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:stone",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Night Shade",
+      "description": "The dark petals have a deep attraction to the darkness of this place. So much that they seem to draw mana from the air around them! However, it appears that they seem to work less effective when placed adjacent to eachother.",
+      "x": 157,
+      "y": 83,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"nightshade\"}"
+      },
+      "prerequisites": [
+        "Mana"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"nightshade\"}"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "amount": 5,
+          "nbt": "{type:\"nightshade\"}"
+        },
+        {
+          "id": "Botania:spreader"
+        },
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"Devryb\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Burning Mana",
+      "description": "Yikes! I have accidentally created a flower that is hungry to burn nearby items! However, this flower seems to make a large amount of mana compared to the passive-generation flowers. With a proper tree farm, this might do quite well.",
+      "x": 199,
+      "y": 81,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"endoflame\"}"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"endoflame\"}"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "nbt": "{type:\"endoflame\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:specialFlower",
+          "nbt": "{type:\"endoflame\"}"
+        },
+        {
+          "id": "minecraft:coal",
+          "damage": 1,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Clayconia",
+      "description": "This flower has a unique property of saturating nearby sand into a form of clay.",
+      "x": 217,
+      "y": 54,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"clayconia\"}"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"clayconia\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sand",
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "name": "More Flowers",
+      "description": "By taking the best of the floral fertilizer and the magical petals, I have managed to create a flower that excites the ground around it causing an eruption of flowers!",
+      "x": 192,
+      "y": 55,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"jadedAmaranthus\"}"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"jadedAmaranthus\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaTablet",
+          "nbt": "{mana:500000}"
+        }
+      ]
+    },
+    {
+      "name": "Runic Altar",
+      "description": "While mana can easily transmute materials that are thrown into it, there is much more potential here. By creating an altar, I can combine various items and use the mana as a binding agent to create a new unique item.",
+      "x": 80,
+      "y": 126,
+      "icon": {
+        "id": "Botania:runeAltar"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "A mana spreader placed directly between a mana pool and an altar can nearly instantly fill an altar.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:runeAltar"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:fishing_rod"
+        },
+        {
+          "id": "minecraft:feather",
+          "amount": 3
+        },
+        {
+          "id": "minecraft:nether_wart"
+        },
+        {
+          "id": "Botania:tinyPotato",
+          "nbt": "{RepairCost:2,display:{Name:\"Wandorf\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Brewing",
+      "description": "I already know that mana can act as a binding agent and fuse certain objects into one another, and I may be able to force the mana into creating potions by melting down certain combinations.",
+      "x": 109,
+      "y": 150,
+      "icon": {
+        "id": "Botania:brewery"
+      },
+      "prerequisites": [
+        "Runic Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:brewery"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:brewFlask",
+          "nbt": "{brewKey:\"resistance\"}"
+        },
+        {
+          "id": "minecraft:nether_wart"
+        }
+      ]
+    },
+    {
+      "name": "Runes",
+      "description": "The runes seemingly do nothing by themselves, but may hold answers in the future.",
+      "x": 121,
+      "y": 125,
+      "icon": {
+        "id": "Botania:rune",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Runic Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:rune",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:rune"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:rune",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:rune",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:rune",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:rune",
+          "amount": 4
+        },
+        {
+          "id": "Botania:rune",
+          "damage": 1,
+          "amount": 4
+        },
+        {
+          "id": "Botania:rune",
+          "damage": 2,
+          "amount": 4
+        },
+        {
+          "id": "Botania:rune",
+          "damage": 3,
+          "amount": 4
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:rune",
+          "damage": 15
+        },
+        {
+          "id": "Botania:rune",
+          "damage": 14
+        }
+      ]
+    },
+    {
+      "name": "Wincense",
+      "description": "It appears that the fumes from the potions also react similarly to the pure liquid. By burning off a small bit of the potion at a time, I can benefit from the effects near the area it is being burnt.",
+      "x": 113,
+      "y": 177,
+      "icon": {
+        "id": "Botania:incenseStick"
+      },
+      "prerequisites": [
+        "Brewing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:incensePlate"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:incenseStick"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:incenseStick",
+          "amount": 5
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:incenseStick",
+          "nbt": "{brewKey:\"emptiness\"}"
+        },
+        {
+          "id": "Botania:incenseStick",
+          "nbt": "{brewKey:\"bloodthirst\"}"
+        }
+      ]
+    },
+    {
+      "name": "Refined Metal",
+      "description": "By throwing mundane materials in a mana pool, I can recieve their mana infused counterparts. Items made with mana-materials have a unique ability of repairing from the mana in my inventory as well.",
+      "x": 207,
+      "y": 126,
+      "icon": {
+        "id": "Botania:manaResource"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manasteelSword"
+        },
+        {
+          "id": "Botania:manasteelChest"
+        }
+      ]
+    },
+    {
+      "name": "Terrasteel",
+      "description": "By using an extreme amount of mana and combining some rare mana-augmented items, I can create a new ingot of Terrasteel. However, in order to perform this infusion I require a special altar that is connected to a mana pool by sparks.",
+      "x": 79,
+      "y": 69,
+      "icon": {
+        "id": "Botania:terraPlate"
+      },
+      "prerequisites": [
+        "Sparks Fly"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraPlate"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaResource",
+          "damage": 4
+        },
+        {
+          "id": "Botania:blackLotus",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "The Elven Race",
+      "description": "Although there appears to be no escape, the book hints at an elven race with a method of communication. By using bits of terrasteel with living wood I can form a portal as a link to the elven.",
+      "x": 79,
+      "y": 36,
+      "icon": {
+        "id": "Botania:alfheimPortal"
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Consult the lexica for more info. Upon opening the portal, throw your lexica botania inside.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingwood",
+                "damage": 5
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Botania:alfheimPortal"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 1
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:pool"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 7
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:storage",
+          "damage": 2
+        },
+        {
+          "id": "Botania:manaResource",
+          "damage": 8,
+          "amount": 3
+        },
+        {
+          "id": "Botania:manaResource",
+          "damage": 9,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Mobile Mana Manipulation",
+      "description": "While I can store mana in a pool for later use, it appears that items do not have the ability to pull directly from the pools around me. By creating a mana tablet, I will be able to use my mana infused gear far from my base.",
+      "x": 238,
+      "y": 126,
+      "icon": {
+        "id": "Botania:manaTablet",
+        "damage": 1000
+      },
+      "prerequisites": [
+        "Refined Metal"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaTablet",
+                "damage": 1000
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaRing",
+          "damage": 1000
+        }
+      ]
+    },
+    {
+      "name": "Rod of the Land",
+      "description": "Finding dirt is starting to become a pain, especially with the amount of monsters running around. By using a rune of earth, I can now direct mana to conjure dirt.",
+      "x": 226,
+      "y": 146,
+      "icon": {
+        "id": "Botania:dirtRod"
+      },
+      "prerequisites": [
+        "Refined Metal"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:dirtRod"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:blackLotus",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "PermaPotion",
+      "description": "By infusing these potions into an amulet, I can drain the potion almost indefinately, so long as I have mana.",
+      "x": 76,
+      "y": 154,
+      "icon": {
+        "id": "Botania:bloodPendant"
+      },
+      "prerequisites": [
+        "Brewing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:bloodPendant"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:leather",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:melon_seeds"
+        },
+        {
+          "id": "minecraft:pumpkin_seeds"
+        },
+        {
+          "id": "minecraft:golden_apple"
+        }
+      ]
+    },
+    {
+      "name": "Shattering",
+      "description": "Terrasteel has the same powers as the other mana-metals in that it repairs itself with the mana around it. The difference however is that terrasteel can continue to store mana past its creation, allowing it to become stronger. The Terra Shatterer can break a large area at one time based on how it is upgraded.",
+      "x": 25,
+      "y": 50,
+      "icon": {
+        "id": "Botania:terraPick",
+        "nbt": "{mana:9999}"
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "To upgrade the shatterer throw it into the mana pool. It will not despawn over time and can be left on the pool to continue to recieve mana.",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraPick",
+                "nbt": "{mana:9999}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemLootBag",
+          "damage": 2,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Terra Blade",
+      "description": "The Terra Blade seems to act as a ranged and a melee weapon, occasionally shooting beams of damage in the direction of a swing.",
+      "x": 23,
+      "y": 86,
+      "icon": {
+        "id": "Botania:terraSword"
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:terraSword"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:pixieRing"
+        }
+      ]
+    },
+    {
+      "name": "Rod of the Skies",
+      "description": "By combining items augmented with air and a core of livingwood, I have created a rod that can launch me into the air while protecting my fall down.",
+      "x": 223,
+      "y": 108,
+      "icon": {
+        "id": "Botania:tornadoRod"
+      },
+      "prerequisites": [
+        "Refined Metal"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:tornadoRod"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:rune",
+          "damage": 3,
+          "amount": 2
+        },
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 93
+        }
+      ]
+    },
+    {
+      "name": "Rod of the Plentiful Mantle",
+      "description": "While there are plenty of ores around me, it can be hard to find the ones I need. Because of this, I my be able to create a rod that can detect the ores around me, at a cost of mana.",
+      "x": 249,
+      "y": 146,
+      "icon": {
+        "id": "Botania:diviningRod"
+      },
+      "prerequisites": [
+        "Refined Metal"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:diviningRod"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:rune",
+          "damage": 12,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Hungry Mana",
+      "description": "This flower seemingly consumes entire trees while producing massive amounts of mana! Now if only I could automagically grow trees...",
+      "x": 234,
+      "y": 81,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"munchdew\"}"
+      },
+      "prerequisites": [
+        "Burning Mana"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"munchdew\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "amount": 2,
+          "nbt": "{type:\"munchdew\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:specialFlower",
+          "nbt": "{type:\"munchdew\"}"
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 1,
+          "amount": 32
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 2,
+          "amount": 32
+        },
+        {
+          "id": "minecraft:sapling",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Mobile Mana Pulling",
+      "description": "When exploring the depths of this endless cavern, it can be annoying having to return early due to a lack of mana. The Mana Mirror allows me to connect directly to a mana pool and pull the mana from it instead of relying on tablets and rings.",
+      "x": 112,
+      "y": 66,
+      "icon": {
+        "id": "Botania:manaMirror",
+        "damage": 1000
+      },
+      "prerequisites": [
+        "Terrasteel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaMirror",
+                "damage": 1000
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaTablet",
+          "nbt": "{mana:500000}"
+        }
+      ]
+    },
+    {
+      "name": "More Mana Spreading",
+      "description": "Dreamwood is much more capable at storing and moving mana. A signficant upgrade from a regular mana spreader, the elven form can transport more at one time.",
+      "x": 13,
+      "y": 8,
+      "icon": {
+        "id": "Botania:spreader",
+        "damage": 2
+      },
+      "prerequisites": [
+        "The Elven Race"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spreader",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:spreader",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Sparks Fly",
+      "description": "Moving mana seems to be very inefficient and often wasteful when used with mana spreaders. Sparks have a unique power of transporting large amounts of mana to where it is needed, though for now this seems to have little purpose.",
+      "x": 79,
+      "y": 95,
+      "icon": {
+        "id": "Botania:spark"
+      },
+      "prerequisites": [
+        "Runic Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spark"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:spark"
+        }
+      ]
+    },
+    {
+      "name": "Agricarnation",
+      "description": "The lime petals have an air of encouragement around them, stimulating plant growth.",
+      "x": 243,
+      "y": 53,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"agricarnation\"}"
+      },
+      "prerequisites": [
+        "Night Shade"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"agricarnation\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:dye",
+          "damage": 15,
+          "amount": 64
+        },
+        {
+          "id": "Botania:fertilizer",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "This For That",
+      "description": "Mana by itself can only transmute a few items into their pure forms. While this is useful, I also have a need for other mundane items. By placing a catalyst under a mana pool, I may be able to transmute certain mundane items into their counterparts.",
+      "x": 40,
+      "y": 160,
+      "icon": {
+        "id": "Botania:alchemyCatalyst"
+      },
+      "prerequisites": [
+        "Runic Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:alchemyCatalyst"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:carrot"
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 4
+        },
+        {
+          "id": "minecraft:rotten_flesh"
+        },
+        {
+          "id": "minecraft:redstone"
+        }
+      ]
+    },
+    {
+      "name": "Duplication",
+      "description": "By using elementium and the alchemy catalyst, I have created a new catalyst that can duplicate certain items at the cost of mana.",
+      "x": 35,
+      "y": 8,
+      "icon": {
+        "id": "Botania:conjurationCatalyst"
+      },
+      "prerequisites": [
+        "The Elven Race"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:conjurationCatalyst"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:redstone"
+        },
+        {
+          "id": "minecraft:snowball"
+        },
+        {
+          "id": "minecraft:glowstone_dust"
+        },
+        {
+          "id": "minecraft:soul_sand"
+        }
+      ]
+    },
+    {
+      "name": "Gaia Guardian",
+      "description": "The elven knowledge whispers of a powerful being with unimaginable power. While it may be wise to avoid such a monster, the book also hints at powerful items that can be crafted from this monsters soul. In order to fight this monster, you must travel to the very top of the cave and clear a very large area beneath the bedrock in order to spawn the gaia guardian. It can be done, I tested it. :)",
+      "x": 140,
+      "y": 33,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 5
+      },
+      "prerequisites": [
+        "The Elven Race"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:beacon"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:pylon",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:storage",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Spreading Overwhelming",
+      "description": "The usage of a gaia spirit in a spreader has created the best spreader yet! It can transport very large amounts of mana without much loss.",
+      "x": 105,
+      "y": 11,
+      "icon": {
+        "id": "Botania:spreader",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:spreader",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:floatingSpecialFlower",
+          "amount": 8,
+          "nbt": "{type:\"hydroangeas\"}"
+        },
+        {
+          "id": "Botania:specialFlower",
+          "amount": 8,
+          "nbt": "{type:\"nightshade\"}"
+        }
+      ]
+    },
+    {
+      "name": "Portal Resources",
+      "x": 299,
+      "y": 174,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 7
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lava Immunity",
+      "description": "By combining the natural fires and the elven materials, I can create an amulet that makes me immune to damage from all fire sources.",
+      "x": 237,
+      "y": 165,
+      "icon": {
+        "id": "Botania:superLavaPendant"
+      },
+      "prerequisites": [
+        "Refined Metal",
+        "Portal Resources"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lavaPendant"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:floatingSpecialFlower",
+          "amount": 3,
+          "nbt": "{type:\"thermalily\"}"
+        }
+      ]
+    },
+    {
+      "name": "Mana Repair",
+      "description": "By applying this new form of ivy on items, they seem to be repaired by draining the mana in my inventory, though they take an unusually large amount.",
+      "x": 260,
+      "y": 166,
+      "icon": {
+        "id": "Botania:regenIvy"
+      },
+      "prerequisites": [
+        "Refined Metal",
+        "Portal Resources"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:regenIvy"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:regenIvy",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Single Storage",
+      "description": "This Talisman can store a seemingly infinite amount of a single item.",
+      "x": 226,
+      "y": 186,
+      "icon": {
+        "id": "Botania:blackHoleTalisman"
+      },
+      "prerequisites": [
+        "Refined Metal",
+        "Portal Resources"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:blackHoleTalisman"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond_block"
+        }
+      ]
+    },
+    {
+      "name": "More Ore",
+      "description": "This new type of flower lends itself a useful power, the ability to convert stone into different types of ores!",
+      "x": 265,
+      "y": 54,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"orechid\"}"
+      },
+      "prerequisites": [
+        "Night Shade",
+        "Portal Resources"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"orechid\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:specialFlower",
+          "nbt": "{type:\"orechidIgnem\"}"
+        },
+        {
+          "id": "minecraft:stone",
+          "amount": 64
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Botania:dreamwood",
+          "amount": 32
+        },
+        {
+          "id": "Botania:elfGlass",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "More Usage",
+      "description": "The elven glass appears to warp and bend to fit around the contents inside of it. It is now possible to get more uses out of a single potion craft.",
+      "x": 79,
+      "y": 178,
+      "icon": {
+        "id": "Botania:vial",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Brewing",
+        "Portal Resources"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:vial",
+                "damage": 1
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:brewFlask",
+          "nbt": "{brewKey:\"healing\"}"
+        }
+      ]
+    },
+    {
+      "name": "Rematch",
+      "description": "At last! I have finally slain the creature and have obtained parts of its soul. However, I am not quite finished. By combining terra steel with the spirits, I can create a new, somewhat useless ingot. By using this ingot in place of terrasteel on the beacon, I can resummon the beast again, except this time it will be much stronger.",
+      "x": 168,
+      "y": 11,
+      "icon": {
+        "id": "Botania:manaResource",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:dice"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:dice"
+        }
+      ]
+    },
+    {
+      "name": "Mana Storm",
+      "description": "By utilizing the aspects of TNT and the power of a gaia spirit, I have created a somewhat...volatile block.",
+      "x": 197,
+      "y": 26,
+      "icon": {
+        "id": "Botania:manaBomb"
+      },
+      "prerequisites": [
+        "Gaia Guardian"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaBomb"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:manaGun"
+        },
+        {
+          "id": "Botania:manaBomb",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Luminize",
+      "description": "A curious transportation method.",
+      "x": 63,
+      "y": 7,
+      "icon": {
+        "id": "Botania:lightRelay"
+      },
+      "prerequisites": [
+        "The Elven Race"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lightRelay"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:lightRelay",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:lightLauncher"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:lightRelay",
+          "amount": 3
+        },
+        {
+          "id": "Botania:lightLauncher"
+        },
+        {
+          "id": "Botania:lightRelay",
+          "damage": 1
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

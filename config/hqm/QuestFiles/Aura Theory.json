@@ -1,0 +1,1446 @@
+{
+  "name": "Aura Theory",
+  "description": "Aura cannot be destroyed or created, but it can be manipulated.",
+  "quests": [
+    {
+      "name": "Aura Crystals",
+      "description": "The air in this place buzzes with magic never before seen. Interesting enough, this Aura seems to have properties unlike other forms of magic. Unable to be destroyed or created, it also appears to give off energy when it falls from one node to another, producing more power the greater distance it falls.",
+      "x": 159,
+      "y": 12,
+      "icon": {
+        "id": "aura:AuraCrystal"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The Encyclopedia Aura holds all the information I will ever need.",
+          "items": [
+            {
+              "item": {
+                "id": "aura:AuraCrystal"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:auraNode"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:auraNodepump"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:AuraCrystal",
+          "amount": 16
+        },
+        {
+          "id": "aura:auraNode",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Processing",
+      "description": "By combining basic ovens with aura, I appear to have created a machine that can process certain materials that are thrown in front of it. It appears to be able to double any ores thrown in front of it. Perhaps more notable is the creation of arcane ingots, though these will need more study.",
+      "x": 159,
+      "y": 44,
+      "icon": {
+        "id": "aura:consumerBlockore"
+      },
+      "prerequisites": [
+        "Aura Crystals"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockore"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:AuraCrystal",
+          "amount": 8
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Cascading Smeltery",
+      "description": "The cascading smeltery acts much like a normal furnace except that it can work faster based on how fast it recieves power.",
+      "x": 198,
+      "y": 46,
+      "icon": {
+        "id": "aura:consumerBlockfurnace"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockfurnace"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:auraNodepump"
+        },
+        {
+          "id": "minecraft:coal",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Arcane Ingots",
+      "description": "By tossing a colored wool with an iron ingot in front of the processor, it appears a new ingot is formed. This metal is cool to the touch and seems to hold fantastic potential inside of it.",
+      "x": 158,
+      "y": 70,
+      "icon": {
+        "id": "aura:ingotWhite"
+      },
+      "prerequisites": [
+        "Processing"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotRed"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:ingotWhite"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:ingotBlue"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotWhite",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "String Theory",
+      "description": "An interesting block that seems to accelerate the fibers on the backs of animals. Even more interesting, is that it seems to randomly color the sheep.",
+      "x": 222,
+      "y": 47,
+      "icon": {
+        "id": "aura:consumerBlockdye"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockdye"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 91
+        }
+      ]
+    },
+    {
+      "name": "Vortex Infuser",
+      "description": "While the arcane ingots seem to have a use, there is not much I can do with them by themselves. The infuser can combine ingots with different items to form a new, useful item.",
+      "x": 157,
+      "y": 96,
+      "icon": {
+        "id": "aura:auraNodecraftingCenter"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Place the pedestrals on each side of the infuser. Falling aura must fall into the pedestal to count.",
+          "items": [
+            {
+              "item": {
+                "id": "aura:auraNodecraftingCenter"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:auraNodecraftingPedestal"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:emerald",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Arcane Gems",
+      "description": "While the arcane ingots have their uses, I have a feeling that they can be molded into something much stronger through the infuser.",
+      "x": 158,
+      "y": 126,
+      "icon": {
+        "id": "aura:gemWhite"
+      },
+      "prerequisites": [
+        "Vortex Infuser"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:gemWhite"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:gemRed"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:gemOrange"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 5
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Arcane Prism",
+      "description": "The gems hold vast power, however combining them has created a prism void of any color. This seems to be the final tier of gem possible, and its uses may prove beneficial.",
+      "x": 66,
+      "y": 79,
+      "icon": {
+        "id": "aura:prismWhite"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:prismWhite"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemWhite",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Prismatic Processing",
+      "description": "By upgrading the processor with an arcane prism, it seems that it can now produce three metals from a single ore.",
+      "x": 23,
+      "y": 50,
+      "icon": {
+        "id": "aura:consumerBlockoreAdv"
+      },
+      "prerequisites": [
+        "Arcane Prism"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockoreAdv"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Ring of Binding",
+      "description": "The arcane white gem holds a special property that seems to be filled with temporary life. I have gave them the name fairies. In their simple charm form they do nothing and require a ring to work.",
+      "x": 218,
+      "y": 134,
+      "icon": {
+        "id": "aura:fairyRing"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyRing"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:fairyCharm",
+          "amount": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Fighter Fairy",
+      "description": "The Fighter Fairy enjoys brawling anything nearby, especially mobs.",
+      "x": 278,
+      "y": 137,
+      "icon": {
+        "id": "minecraft:golden_sword"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemYellow"
+        }
+      ]
+    },
+    {
+      "name": "Debuffer Fairy",
+      "description": "The Debuffer Fairy has a unique niche of applying debuffs on mobs in the immediate area.",
+      "x": 262,
+      "y": 82,
+      "icon": {
+        "id": "minecraft:potion",
+        "damage": 16424
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemRed"
+        }
+      ]
+    },
+    {
+      "name": "Buffer Fairy",
+      "description": "The buffer fairy will randomly apply buffs to me when used.",
+      "x": 252,
+      "y": 102,
+      "icon": {
+        "id": "minecraft:potion",
+        "damage": 16425
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemViolet"
+        }
+      ]
+    },
+    {
+      "name": "Pusher Fairy",
+      "description": "The Pusher Fairy mimics the impact of my blows and causes them to be pushed back further from me.",
+      "x": 265,
+      "y": 120,
+      "icon": {
+        "id": "minecraft:piston"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sticky_piston",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Shooter  Fairy",
+      "description": "The shooter fairy seems to give more impact on my arrow shots.",
+      "x": 275,
+      "y": 100,
+      "icon": {
+        "id": "Botania:livingwoodBow"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "kegare.caveworld:cavenic_bow"
+        }
+      ]
+    },
+    {
+      "name": "Fetcher Fairy",
+      "description": "The Fetcher Fairy appears to enjoy picking up items and when returning to the ring, drops them in my inventory.",
+      "x": 259,
+      "y": 140,
+      "icon": {
+        "id": "Botania:magnetRing"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemGreen"
+        }
+      ]
+    },
+    {
+      "name": "Savior Fairy",
+      "description": "An interesting fairy, the Savior Fairy only seems to activate when I am in great danger, granting me massive amounts of damage.",
+      "x": 287,
+      "y": 118,
+      "icon": {
+        "id": "minecraft:diamond_sword"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemBlack"
+        }
+      ]
+    },
+    {
+      "name": "Digger Fairy",
+      "description": "The Digger Fairy enjoys getting dirty and causes my hands to move much rapidly when destroying the ground.",
+      "x": 271,
+      "y": 158,
+      "icon": {
+        "id": "Thaumcraft:ItemShovelElemental"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 13
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemViolet"
+        }
+      ]
+    },
+    {
+      "name": "Baiter Fairy",
+      "description": "The baiter fairy seemingly summons creatures at the location it is used, for free!",
+      "x": 241,
+      "y": 82,
+      "icon": {
+        "id": "minecraft:egg"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 93
+        }
+      ]
+    },
+    {
+      "name": "Scarer Fairy",
+      "description": "The scarer fairy seems to terrify even the most dangerous of mobs, reducing their chance of spawning in the area around it.",
+      "x": 284,
+      "y": 82,
+      "icon": {
+        "id": "chisel:pumpkin10"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 11
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemOrange"
+        }
+      ]
+    },
+    {
+      "name": "Glider Fairy",
+      "description": "The Glider Fairy will cause my falls to be graceful and to not end with a broken leg.",
+      "x": 246,
+      "y": 122,
+      "icon": {
+        "id": "SilentGems:CottonBoots"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemBlue"
+        }
+      ]
+    },
+    {
+      "name": "Extingusher Fairy",
+      "description": "The Extinguisher Fairy has a deep fear of fire. Because of this, it will extinguish me when on fire and freeze lava.",
+      "x": 248,
+      "y": 159,
+      "icon": {
+        "id": "minecraft:water_bucket"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 12
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemRed"
+        }
+      ]
+    },
+    {
+      "name": "Lighter Fairy",
+      "description": "The Lighter Fairy has a fear of the dark and will make sure the way is always lit for me.",
+      "x": 261,
+      "y": 178,
+      "icon": {
+        "id": "minecraft:torch"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 15
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemWhite"
+        }
+      ]
+    },
+    {
+      "name": "Training Fairy",
+      "description": "The trainer fairy occasionally drops orbs of EXP.",
+      "x": 283,
+      "y": 178,
+      "icon": {
+        "id": "minecraft:experience_bottle"
+      },
+      "prerequisites": [
+        "Ring of Binding"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:fairyCharm",
+                "damage": 16
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:experience_bottle",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Monitor",
+      "description": "By combining an aura node with redstone, I appear to have created a block that can send a redstone signal in relation to the consumers or pumps near it.",
+      "x": 128,
+      "y": 56,
+      "icon": {
+        "id": "aura:monitor"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:monitor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:auraNode"
+        }
+      ]
+    },
+    {
+      "name": "Amulet of the Angels Wing",
+      "description": "Amazing! Much like the ingots and gems, the prism takes on the powers of mundane blocks to a much higher extend than its lesser-parts. By using pistons, it has become possible to move between entire layers of the world.",
+      "x": 23,
+      "y": 80,
+      "icon": {
+        "id": "aura:angelJumpAmulet"
+      },
+      "prerequisites": [
+        "Arcane Prism"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:angelJumpAmulet"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sticky_piston",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Portable Black Hole",
+      "description": "In a world full of stone, it simply isn\u0027t possible to carry it all back. To solve such a problem, I have created an item that destroys any cobblestone that enters my inventory.",
+      "x": 197,
+      "y": 75,
+      "icon": {
+        "id": "aura:blackHole"
+      },
+      "prerequisites": [
+        "Arcane Ingots"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:blackHole"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:leather",
+          "amount": 5
+        },
+        {
+          "id": "minecraft:bread",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Portable Red Hole",
+      "description": "It appears that red aura is rather unstable. By compressing a mass amount of red aura into a single item, it appears to cause frequent explosions when dropped on the ground.",
+      "x": 134,
+      "y": 185,
+      "icon": {
+        "id": "aura:redHole"
+      },
+      "prerequisites": [
+        "Protection Amulets"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:redHole"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Protection Amulets",
+      "description": "It appears that each colored gem has its own unique property that can be molded into a charming necklace.",
+      "x": 120,
+      "y": 166,
+      "icon": {
+        "id": "aura:orangeAmulet"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:orangeAmulet"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemGreen"
+        }
+      ]
+    },
+    {
+      "name": "Sword of Transmutation",
+      "description": "The Violet Aura loves to change one thing to another. By creating a sword of pure violet aura, I can transmute certain mobs or animals into a different form.",
+      "x": 187,
+      "y": 164,
+      "icon": {
+        "id": "aura:transmutingSword"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:transmutingSword"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 98,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Cascading Spawner",
+      "description": "I have found a way to spawn creatures of their respective biome by using a massive amount of power. I am not sure how dangerous this may be though.",
+      "x": 128,
+      "y": 130,
+      "icon": {
+        "id": "aura:consumerBlockmob"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockmob"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotWhite",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Ring of Shattered Stone",
+      "description": "The fastest form of resource gathering seems to be digging through these walls. While it may be faster to blow the walls up, it often costs many ores and minerals to do so. Until now.",
+      "x": 107,
+      "y": 184,
+      "icon": {
+        "id": "aura:explosionRing"
+      },
+      "prerequisites": [
+        "Protection Amulets"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:explosionRing"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:tnt",
+          "amount": 10
+        },
+        {
+          "id": "aura:ingotRed",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Sash",
+      "description": "The arcane prism often brings out the hidden powers of items it is combined with, and feathers are no exception. By molding feathers with a prism, I have created a sash that allows me to climb hills 3 blocks high and even crawl up walls.",
+      "x": 52,
+      "y": 31,
+      "icon": {
+        "id": "aura:angelStepBelt"
+      },
+      "prerequisites": [
+        "Arcane Prism"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:angelStepBelt"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:gemBlack"
+        },
+        {
+          "id": "aura:gemYellow"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:gemViolet"
+        },
+        {
+          "id": "aura:gemBlue"
+        }
+      ]
+    },
+    {
+      "name": "Synthesis",
+      "description": "The prism appears to be able to create a new type of ingot when given a massive amount of power. This new angels steel has a unique power of granting two random enchantments upon the tools created. Not only that, but by combining three of the same tiered metal, I can create a new degree that has two additional enchantments.",
+      "x": 104,
+      "y": 77,
+      "icon": {
+        "id": "aura:consumerBlockangel"
+      },
+      "prerequisites": [
+        "Arcane Prism"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockangel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotGreen",
+          "amount": 10
+        },
+        {
+          "id": "aura:ingotYellow",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Cascading Brewer",
+      "description": "The Cascading Brewer has an unusual goal of filling water bottles with random potion effects. While I can\u0027t determine what they will be, it is a very cheap method of obtaining potions.",
+      "x": 166,
+      "y": 165,
+      "icon": {
+        "id": "aura:consumerBlockpotion"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockpotion"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 6,
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "aura:AuraCrystal",
+          "amount": 16
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 3,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Storage Controlling",
+      "description": "It is often said that books store knowledge, but by merging a bookshelf with an arcane prism it appears as if the bookshelf could process its surroundings. By connecting more bookshelves it seems to serve as the central unit for storage.",
+      "x": 65,
+      "y": 118,
+      "icon": {
+        "id": "aura:storageBookshelfCoordinator"
+      },
+      "prerequisites": [
+        "Arcane Prism"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:storageBookshelfCoordinator"
+              }
+            },
+            {
+              "item": {
+                "id": "aura:basicBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:bookshelf",
+          "amount": 5
+        },
+        {
+          "id": "aura:ingotYellow",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Dense Storage",
+      "description": "By augmenting the books with stone it seems to take on a property of compression. Dense books can store many of a few items.",
+      "x": 44,
+      "y": 148,
+      "icon": {
+        "id": "aura:veryDenseBook"
+      },
+      "prerequisites": [
+        "Storage Controlling"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:denseBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:extremelyDenseBook"
+        }
+      ]
+    },
+    {
+      "name": "Light Storage",
+      "description": "By augmenting the books with glass it seems to allow more types of items inside, though less at a time.",
+      "x": 87,
+      "y": 148,
+      "icon": {
+        "id": "aura:lightBook"
+      },
+      "prerequisites": [
+        "Storage Controlling"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:lightBook"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:extremelyLightBook"
+        }
+      ]
+    },
+    {
+      "name": "Enchanting",
+      "description": "The aura has hinted at a new way of enchantments. It appears that I can imbue aura crystals onto weapons or tools, not just angel steel.",
+      "x": 180,
+      "y": 183,
+      "icon": {
+        "id": "aura:consumerBlockenchant"
+      },
+      "prerequisites": [
+        "Arcane Gems"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:consumerBlockenchant"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 3
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 1
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 4
+        },
+        {
+          "id": "aura:AuraCrystal",
+          "damage": 7
+        }
+      ]
+    },
+    {
+      "name": "First Degree",
+      "description": "First degree metal is decent, but has much room for improvement. ",
+      "x": 91,
+      "y": 59,
+      "icon": {
+        "id": "aura:ingotAngelSteel"
+      },
+      "prerequisites": [
+        "Synthesis"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:ingotAngelSteel",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Seventh Degree",
+      "description": "By combining many angel steel together I have created the seventh degree steel!",
+      "x": 80,
+      "y": 39,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 6
+      },
+      "prerequisites": [
+        "First Degree"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:angelsteelPickaxe6",
+          "nbt": "{angelbuffs:[2,4,1,5,]}"
+        }
+      ]
+    },
+    {
+      "name": "Eleventh Degree",
+      "description": "The eleventh degree seems to be the most refined metal possible granting many tool bonuses with it.",
+      "x": 100,
+      "y": 40,
+      "icon": {
+        "id": "aura:ingotAngelSteel",
+        "damage": 10
+      },
+      "prerequisites": [
+        "Seventh Degree"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotAngelSteel",
+                "damage": 10
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "aura:angelsteelAxe10",
+          "nbt": "{angelbuffs:[6,3,6,5,]}"
+        }
+      ]
+    },
+    {
+      "name": "Tear",
+      "description": "It appears that not all monsters spawn underground. This would seem to be a good thing, except that some of their resources are needed. Perhaps by finding or creating a hell biome and using the spawner, I can obtain a ghast tear.",
+      "x": 100,
+      "y": 118,
+      "icon": {
+        "id": "minecraft:ghast_tear"
+      },
+      "prerequisites": [
+        "Cascading Spawner"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:ghast_tear"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:ghast_tear",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
