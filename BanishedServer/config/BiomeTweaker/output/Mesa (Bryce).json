@@ -8,10 +8,8 @@
   "Height Variation": 0.2,
   "Top Block": "minecraft:sand",
   "Filler Block": "minecraft:stained_hardened_clay",
-  "Actual Filler Block": "minecraft:stone",
-  "Liquid Filler Block": "minecraft:water",
-  "Grass Color": "Not Set",
-  "Foliage Color": "Not Set",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
   "Water Color": "16777215",
   "Temperature": 2.0,
   "Humidity": 0.0,
@@ -24,6 +22,7 @@
     "PLAINS",
     "SANDY"
   ],
+  "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
       "Entity Class": "lycanite.lycanitesmobs.plainsmobs.entity.EntityMakaAlpha",
@@ -182,5 +181,6 @@
       "Max Group Count": 8
     }
   ],
+  "Spawn Biome": false,
   "Tweaked": false
 }

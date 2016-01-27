@@ -39,6 +39,11 @@
             "maxStackSize": 1,
             "textureName": "summonGolem",
             "name": "Superbia"            
+        },
+		{
+            "maxStackSize": 1,
+            "textureName": "summonGolem",
+            "name": "Throw Me For Golemancers Bell"            
         }
     ],
 "blocks": [         

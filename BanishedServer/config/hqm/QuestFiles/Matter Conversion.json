@@ -1,0 +1,369 @@
+{
+  "name": "Matter Conversion",
+  "description": "Rearranging the mundane. Access to this power will require the understanding of all three magicks.",
+  "quests": [
+    {
+      "name": "Unnamed",
+      "x": 121,
+      "y": 175,
+      "icon": {
+        "id": "aura:ingotWhite"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "aura:ingotWhite"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Energy Condensed",
+      "description": "The first form of energy exchange, the condensor will allow me to target a specific block for transmutation and allow me offer items up to the designated EMC target.",
+      "x": 159,
+      "y": 176,
+      "icon": {
+        "id": "ProjectE:condenser_mk1"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:condenser_mk1"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Philo Stone",
+      "description": "The first step in transmutation is the Philosophers Stone. This stone seems to be capable of transmuting natural blocks in the world such as Stone, Sand and Grass. It can affect a larger area through charging it by using V, or reducing the area with Shift-V.",
+      "x": 121,
+      "y": 137,
+      "icon": {
+        "id": "ProjectE:item.pe_philosophers_stone"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_philosophers_stone"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EMC Storage",
+      "description": "When augmented with alchemical fuel, diamonds seem to gain the ability to store EMC in excess of their original value. It is not yet clear as to what you would need stored EMC for, but it appears that each shard can be upgraded into a larger version and charged through an Anti-Matter relay.",
+      "x": 154,
+      "y": 93,
+      "icon": {
+        "id": "ProjectE:item.pe_klein_star"
+      },
+      "prerequisites": [
+        "Alchemical Fuels"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_klein_star"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "ProjectE:relay_mk1"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alchemical Fuels",
+      "description": "One unique function of the Philosopher\u0027s Stone is the ability to condense various materials into a new form, equal to their combined EMC. It is possible to combine fuels together into a new and more efficient form. You suspect they will have more purpose in the future.",
+      "x": 121,
+      "y": 106,
+      "icon": {
+        "id": "ProjectE:item.pe_fuel",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Philo Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_fuel",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "ProjectE:item.pe_fuel",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dense Matter",
+      "description": "The density of the Aeternalis Fuel has given you an idea. By combining an extremely dense and high EMC item with 8 Aeternalis Fuel, it may be possible to create an object made of dark matter.",
+      "x": 121,
+      "y": 71,
+      "icon": {
+        "id": "ProjectE:item.pe_matter"
+      },
+      "prerequisites": [
+        "Alchemical Fuels"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_matter"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bag Storage",
+      "description": "Alchemical Chests can be shrunk into a bag form. More interesting however, is that the bag will keep the inventory based on color and is not lost when the bag is destroyed. It also appears that the bag is bound to a single player, and other players will not have access to your bag\u0027s inventory.",
+      "x": 200,
+      "y": 176,
+      "icon": {
+        "id": "ProjectE:item.pe_alchemical_bag",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Energy Condensed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_alchemical_bag",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ProjectE:item.pe_alchemical_bag",
+          "damage": 14
+        }
+      ]
+    },
+    {
+      "name": "Talisman of Repair",
+      "description": "This item will repair damaged tools in my inventory OR alchemical bags.",
+      "x": 231,
+      "y": 176,
+      "icon": {
+        "id": "ProjectE:item.pe_repair_talisman"
+      },
+      "prerequisites": [
+        "Bag Storage"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_repair_talisman"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ProjectE:item.pe_repair_talisman"
+        }
+      ]
+    },
+    {
+      "name": "Mob Away",
+      "description": "The Philosophers Stone seems to be capable of giving torches a special property. By infusing redstone torches with diamonds, these new torches appear to keep mobs at a distance.",
+      "x": 81,
+      "y": 137,
+      "icon": {
+        "id": "ProjectE:interdiction_torch"
+      },
+      "prerequisites": [
+        "Philo Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:interdiction_torch"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ProjectE:interdiction_torch"
+        }
+      ]
+    },
+    {
+      "name": "Banded",
+      "description": "Basic iron band. Kind of worthless on its own.",
+      "x": 84,
+      "y": 102,
+      "icon": {
+        "id": "ProjectE:item.pe_ring_iron_band"
+      },
+      "prerequisites": [
+        "Philo Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_ring_iron_band"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ProjectE:item.pe_ring_iron_band"
+        }
+      ]
+    },
+    {
+      "name": "Real-World Interaction",
+      "description": "Dark Pedestals allow some items to interact with the world automatically.",
+      "x": 32,
+      "y": 19,
+      "icon": {
+        "id": "ProjectE:dm_pedestal"
+      },
+      "prerequisites": [
+        "EMC Unleashed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:dm_pedestal"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EMC Unleashed",
+      "description": "By augmenting matter with specific items, it is possible to create items that perform extremely specific tasks, often at the cost of stored EMC.",
+      "x": 80,
+      "y": 44,
+      "icon": {
+        "id": "ProjectE:item.pe_volcanite_amulet"
+      },
+      "prerequisites": [
+        "Dense Matter"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:item.pe_void_ring",
+                "nbt": "{teleportCooldown:104b}"
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "This For That",
+      "description": "The transmutation tablet allows the user to destroy items in order to gain knowledge about the item. It is then possible to create that item instantly out of the stored EMC inside of the tablet.",
+      "x": 157,
+      "y": 137,
+      "icon": {
+        "id": "ProjectE:transmutation_table"
+      },
+      "prerequisites": [
+        "Philo Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ProjectE:transmutation_table"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

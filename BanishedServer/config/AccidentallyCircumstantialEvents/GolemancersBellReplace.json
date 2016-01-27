@@ -1,0 +1,25 @@
+{
+    "events":
+            [
+  {
+            "event_type": "TOSS",
+            "issuer": "SELF",
+            "modid": "customitems",
+            "name": "throw_me_for_golemancers_bell",
+            "meta": "0",
+            "tasks":
+                    [   
+						{					
+						"task_type": "ITEM_NEW_LIFE",
+						"newLife": "3"
+						},
+						{
+							"task_type": "COMMAND",
+							"command": "/give @p 4261",
+							"ignorePrivilages": "true"
+						}
+						
+                    ]
+    }
+]
+}

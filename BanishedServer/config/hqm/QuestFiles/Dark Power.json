@@ -1,0 +1,3009 @@
+{
+  "name": "Dark Power",
+  "description": "I am banished to this prison, but all is not lost. I can expend my energy to conjure items or learn new powers, but it can take a toll on my life force. In order to sustain this power, I will have to take a darker path...",
+  "quests": [
+    {
+      "name": "Essence Drain",
+      "description": "The creatures with bows hold knowledge of this dark place. Perhaps if I slay a few I can collect their power for my own.",
+      "x": 28,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:skull"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Skeleton",
+              "icon": {
+                "id": "minecraft:skull"
+              },
+              "mob": "Skeleton",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "battlegear2:mb.arrow",
+          "damage": 2,
+          "amount": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Seeds",
+      "description": "The creation of life is not an easy task, but I have no choice.",
+      "x": 229,
+      "y": 26,
+      "icon": {
+        "id": "minecraft:wheat_seeds"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:wheat_seeds"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "description": "The green monsters are stealthy, but inefficient in their methods.",
+      "x": 42,
+      "y": 34,
+      "icon": {
+        "id": "minecraft:skull",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Creeper",
+              "icon": {
+                "id": "minecraft:skull",
+                "damage": 4
+              },
+              "mob": "Creeper",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gunpowder",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "description": "The spiders wait and lurk in the shadows waiting for easy targets. They contain the knowledge of adaptation.",
+      "x": 51,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:spider_eye"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Spider",
+              "icon": {
+                "id": "minecraft:spider_eye"
+              },
+              "mob": "Spider",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:string",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "description": "The blaze represent the hatred of this place.",
+      "x": 73,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:blaze_rod"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Blaze",
+              "icon": {
+                "id": "minecraft:blaze_rod"
+              },
+              "mob": "Blaze",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:blaze_powder",
+          "amount": 2
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "description": "Zombies contain the knowledge of primal survival.",
+      "x": 20,
+      "y": 34,
+      "icon": {
+        "id": "minecraft:skull",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Zombie",
+              "icon": {
+                "id": "minecraft:skull",
+                "damage": 2
+              },
+              "mob": "Zombie",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:leather"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Soul Bound",
+      "description": "I can gain dark power by slaying the mobs around me. The player focus will determine the creation of the object or spell I am to create before it drains my power. NOTE: THE REPUTATION TASKS REQUIRE THE BOOK TO BE CLOSED AND REOPENED TO REGISTER.",
+      "x": 157,
+      "y": 71,
+      "icon": {
+        "id": "arsmagica2:playerFocus"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Power is gained in the form of reputation. Slaying quests will give reputation while completing other tasks here will deplete it.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Magnetism ",
+      "description": "I have discovered a way to draw mobs closer to me. While this may not seem useful against creepers or zombies, ranged monsters will no longer be able to cower away.",
+      "x": 159,
+      "y": 148,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 11,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMagnetism\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1002,],ShapeGroup_0:[1,]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 11,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMagnetism\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1002,],ShapeGroup_0:[1,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Wind Wall",
+      "description": "The particles in the air lend me their help as I cast away any projectiles that find their way in my direction.",
+      "x": 181,
+      "y": 147,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 285,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,display:{Name:\"§bWind Wall\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1047,],ShapeGroup_0:[16,7,]}"
+      },
+      "prerequisites": [
+        "Magnetism "
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 285,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,display:{Name:\"§bWind Wall\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1047,],ShapeGroup_0:[16,7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Fortune Dig",
+      "description": "My current methods of resource extraction are rather reckless. By becoming more precise, I can harvest more from a single block.",
+      "x": 87,
+      "y": 142,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 127,
+        "nbt": "{ench:[0:{lvl:2s,id:35s},1:{lvl:2s,id:21s}],ShapeGroupMeta_00:[0 bytes],NumStages:1,display:{Name:\"§bDig Fortune 2\"},spell_mod_version:\"1.4.0.008\",SpellModifierMeta_16_0_1:[0 bytes],SpellComponentIDs_0:[1008,],SpellModifierMeta_16_0_0:[0 bytes],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5016,5016,],ShapeGroup_0:[9,]}"
+      },
+      "prerequisites": [
+        "AOE Dig"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 5,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 127,
+          "nbt": "{ench:[0:{lvl:2s,id:35s},1:{lvl:2s,id:21s}],ShapeGroupMeta_00:[0 bytes],NumStages:1,display:{Name:\"§bDig Fortune 2\"},spell_mod_version:\"1.4.0.008\",SpellModifierMeta_16_0_1:[0 bytes],SpellComponentIDs_0:[1008,],SpellModifierMeta_16_0_0:[0 bytes],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5016,5016,],ShapeGroup_0:[9,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -25
+        }
+      ]
+    },
+    {
+      "name": "AOE Dig",
+      "description": "As I have dug around this world of endless caves, it seems that not all walls are structurally sound. It may be possible to destroy more than one block at once.",
+      "x": 74,
+      "y": 123,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 120,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bAOE Dig\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[9,0,]}"
+      },
+      "prerequisites": [
+        "Dig 1"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 120,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bAOE Dig\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[9,0,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Dig 1",
+      "description": "Pickaxes are bulky and need to be maintained. I have learned that by directing mana at the weak spots in the rock, I can force it to break at my will.",
+      "x": 53,
+      "y": 123,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 118,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bDig 1\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[9,]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 118,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bDig 1\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[9,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Mining Beam",
+      "description": "Bah! If I wish to find anything in this prison, I must be able to dig faster...",
+      "x": 65,
+      "y": 143,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 46,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,display:{Name:\"§bMining Beam\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[1,0,]}"
+      },
+      "prerequisites": [
+        "Dig 1"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 46,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMining Beam\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1008,],ShapeGroup_0:[1,0,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Magelight",
+      "description": "Torches lend a brilliant idea. By bending the light that is given off, I can create a new source of light at the expense of my mana pool.",
+      "x": 29,
+      "y": 125,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 319,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMagelight\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1033,],ShapeGroup_0:[9,]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 319,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMagelight\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1033,],ShapeGroup_0:[9,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Sugar Cane",
+      "description": "By modifying the seeds, I can create a new plant that can be used for a different purpose.",
+      "x": 251,
+      "y": 24,
+      "icon": {
+        "id": "minecraft:reeds"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 0,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:reeds"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Wood",
+      "description": "In a world of stone and dirt, it isn\u0027t a surprise that there is a lack of growth. However, I can expend energy to create a single log. While inefficient, it is my only option until I can find a way to grow my own.",
+      "x": 209,
+      "y": 26,
+      "icon": {
+        "id": "minecraft:log"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:log"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Soul Boundless",
+      "description": "CLAIMING A SECOND FOCUS WILL CAUSE YOU TO LOSE 25 REPUTATION. DO NOT CLAIM UNLESS YOU LOSE THE FIRST.",
+      "x": 156,
+      "y": 14,
+      "icon": {
+        "id": "arsmagica2:Crystal Phylactery",
+        "damage": 3,
+        "nbt": "{SpawnClassName:\"UtilityMobs.BoundSoul\",PercentFilled:100.0f}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 10,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "DEATH",
+          "deaths": 1
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond"
+              },
+              "required": 3,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -25
+        }
+      ]
+    },
+    {
+      "name": "Shield",
+      "description": "By expending a minor amount of mana, I can ignore small hits and bruises.",
+      "x": 148,
+      "y": 169,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 151,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bShield\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1049,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Magnetism "
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 151,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bShield\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1049,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Adrenaline",
+      "description": "I can now accelerate my body to break blocks faster than before.",
+      "x": 193,
+      "y": 166,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 139,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bAdrenaline\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1024,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Magnetism "
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 139,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bAdrenaline\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1024,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Healing Aura",
+      "description": "I can now create a field that will provide constant healing.",
+      "x": 171,
+      "y": 167,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 147,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bHealing Aura\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1025,],ShapeGroup_0:[10,7,]}"
+      },
+      "prerequisites": [
+        "Magnetism "
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 147,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bHealing Aura\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1025,],ShapeGroup_0:[10,7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Rock Blast 1",
+      "description": "The skeletons of the dark lend me knowledge. By using the stones around me, I can manipulate them towards a target at a rapid speed causing damage.",
+      "x": 228,
+      "y": 116,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 308,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bRock Blast\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1040,],ShapeGroup_0:[5,]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 308,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bRock Blast\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1040,],ShapeGroup_0:[5,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Snare",
+      "description": "The trickery of the spiders is ingenius! By combining the powers of the spiders and the skeletons, I can launch a projectile that will freeze my target in place!",
+      "x": 250,
+      "y": 116,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 362,
+        "nbt": "{ShapeGroupMeta_02:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bSnare\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1014,1040,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[],ShapeGroup_0:[5,10,9,]}"
+      },
+      "prerequisites": [
+        "Rock Blast 1"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 362,
+          "nbt": "{ShapeGroupMeta_02:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bSnare\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1014,1040,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[],ShapeGroup_0:[5,10,9,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Magic Beam",
+      "description": "I can now manipulate my mana into a direct beam of destruction, causing damage to all mobs in its path.",
+      "x": 217,
+      "y": 136,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 19,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bMagic Beam\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1035,],ShapeGroup_0:[1,]}"
+      },
+      "prerequisites": [
+        "Rock Blast 1"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 19,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMagic Beam\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1035,],ShapeGroup_0:[1,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Fire Vortex Rune",
+      "description": "The stealth and potential power of the creeper has lent its knowledge to a spell of trickery. I can place a rune down that will instantaneously throw a mob through the ground, never to be seen again.",
+      "x": 239,
+      "y": 136,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 128,
+        "nbt": "{ShapeGroupMeta_02:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bFire Vortex Rune\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1002,1015,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[],ShapeGroup_0:[6,10,9,]}"
+      },
+      "prerequisites": [
+        "Magic Beam"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 128,
+          "nbt": "{ShapeGroupMeta_02:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bFire Vortex Rune\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1002,1015,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[],ShapeGroup_0:[6,10,9,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Growth 2",
+      "description": "While I can grow a single plant at a time, I have discovered a way to make all plants nearby accelerate their growth. Not only that, but I can cause grass blocks to sprout with life. The only problem I forsee is that in order to create flowers or grass I must be one block below the block I am hitting.",
+      "x": 43,
+      "y": 144,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 365,
+        "nbt": "{SpellModifierMeta_6_0_0:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bAccelerated Growth\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1022,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5006,],ShapeGroup_0:[10,0,]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 365,
+          "nbt": "{SpellModifierMeta_6_0_0:[0 bytes],ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bAccelerated Growth\"},spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1022,],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5006,],ShapeGroup_0:[10,0,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Fury",
+      "description": "Everyone has a monster inside of them.",
+      "x": 161,
+      "y": 188,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 138,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bFury\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1072,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Healing Aura",
+        "Adrenaline"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 138,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bFury\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1072,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Mystery Spell",
+      "description": "My discoveries have lead to something...rather strange.",
+      "x": 182,
+      "y": 187,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMystery Spell\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1076,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Adrenaline"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bMystery Spell\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1076,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Mark/Recall",
+      "description": "By noting my current locations with the spell Mark, I can then exert a massive amount of energy to return to that location.",
+      "x": 139,
+      "y": 190,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 69,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bRecall\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1044,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Shield"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 45,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMark\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1037,],ShapeGroup_0:[5,]}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 69,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,display:{Name:\"§bRecall\"},ShapeOrdinal_0:-1,suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1044,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Rewind",
+      "description": "I have reached the ultimate form of power, manipulation of time. While I can\u0027t revert time to before the disaster, I can cause a disruption long enough to send me back to the location of which the spell was cast when my time is up.",
+      "x": 203,
+      "y": 186,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 233,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bRewind\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1006,],ShapeGroup_0:[7,]}"
+      },
+      "prerequisites": [
+        "Mark/Recall"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 233,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bRewind\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1006,],ShapeGroup_0:[7,]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Sapling",
+      "description": "By combining the logs and the seeds, I can form a plant that mimics the trees of the overworld. The challenge, however, will be finding enough space to grow it.",
+      "x": 221,
+      "y": 46,
+      "icon": {
+        "id": "minecraft:sapling"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sapling"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -12
+        }
+      ]
+    },
+    {
+      "name": "Essence Drain",
+      "description": "Beings of pure energy, they might be the key to escaping.",
+      "x": 64,
+      "y": 33,
+      "icon": {
+        "id": "Thaumcraft:ItemWispEssence",
+        "nbt": "{Aspects:[0:{amount:2,key:\"sano\"}]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 1,
+        "hours": 0
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Any essence will work.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemWispEssence",
+                "nbt": "{Aspects:[0:{amount:2,key:\"aer\"}]}"
+              },
+              "required": 3,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "String",
+      "description": "By fusing the fibers in the air I can create string!",
+      "x": 263,
+      "y": 43,
+      "icon": {
+        "id": "minecraft:string"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 0,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "minecraft:string"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -2
+        }
+      ]
+    },
+    {
+      "name": "Manticore",
+      "description": "A flying predator with a bite that causes hunger and an overwhelming weakness.",
+      "x": 30,
+      "y": 53,
+      "icon": {
+        "id": "desertmobs:desertegg",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Manticore",
+              "icon": {
+                "id": "desertmobs:desertegg",
+                "damage": 7
+              },
+              "mob": "desertmobs.manticore",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Chupacabra",
+      "description": "A common beast that shouldn\u0027t be underestimated.",
+      "x": 9,
+      "y": 53,
+      "icon": {
+        "id": "shadowmobs:shadowegg",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Chupacobra",
+              "icon": {
+                "id": "shadowmobs:shadowegg",
+                "damage": 4
+              },
+              "mob": "shadowmobs.chupacabra",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "shadowmobs:chupacabratreat"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Shade",
+      "description": "A creature of shadow with a fearful gaze.",
+      "x": 20,
+      "y": 72,
+      "icon": {
+        "id": "shadowmobs:shadowegg",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Shade",
+              "icon": {
+                "id": "shadowmobs:shadowegg",
+                "damage": 5
+              },
+              "mob": "shadowmobs.shade",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Remobra",
+      "description": "Flying beasts with an attack of poison.",
+      "x": 42,
+      "y": 70,
+      "icon": {
+        "id": "swampmobs:swampegg",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Remobra",
+              "icon": {
+                "id": "swampmobs:swampegg",
+                "damage": 6
+              },
+              "mob": "swampmobs.remobra",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Lobber",
+      "description": "A beast of molten rock and fire, he is a worthy battle.",
+      "x": 64,
+      "y": 69,
+      "icon": {
+        "id": "infernomobs:infernoegg",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 10
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Lobber",
+              "icon": {
+                "id": "infernomobs:infernoegg",
+                "damage": 1
+              },
+              "mob": "infernomobs.lobber",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Afrit",
+      "description": "A beast of fire and destruction, yet appearingly loyal. It may be able to be tamed to my needs.",
+      "x": 52,
+      "y": 51,
+      "icon": {
+        "id": "infernomobs:infernoegg",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Afrit",
+              "icon": {
+                "id": "infernomobs:infernoegg",
+                "damage": 3
+              },
+              "mob": "infernomobs.afrit",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "infernomobs:afrittreat"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Grue",
+      "description": "A beast of darkness and confusion.",
+      "x": 32,
+      "y": 90,
+      "icon": {
+        "id": "shadowmobs:shadowegg"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Grue",
+              "icon": {
+                "id": "shadowmobs:shadowegg"
+              },
+              "mob": "shadowmobs.grue",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:torch",
+          "amount": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Challenge Awaits",
+      "description": "From great expenditure of power brings a daring challenge and reward. A tool that can summon a fantastic dungeon near me! I should be well prepared. Throwing the item will cause it to expire and summon the dungeon above or below me. It will over-write any blocks near, so I should be far from anything important.",
+      "x": 274,
+      "y": 23,
+      "icon": {
+        "id": "customitems:dungeon_caller"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "customitems:dungeon_caller"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -40
+        }
+      ]
+    },
+    {
+      "name": "Cinder",
+      "description": "Beasts of pure fire with a burning bite.",
+      "x": 74,
+      "y": 50,
+      "icon": {
+        "id": "infernomobs:infernoegg"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 10
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Cinder",
+              "icon": {
+                "id": "infernomobs:infernoegg"
+              },
+              "mob": "infernomobs.cinder",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "HQM Progress Boost",
+      "description": "This is a creative item only intended for servers in case of an HQM reset. Each item grants 5 reputation.",
+      "x": 114,
+      "y": 11,
+      "icon": {
+        "id": "customitems:help_my_hqm_broke!"
+      },
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "customitems:help_my_hqm_broke!"
+              }
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Egg",
+      "description": "I can form the base of life, though rather costly.",
+      "x": 243,
+      "y": 44,
+      "icon": {
+        "id": "minecraft:egg"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "minecraft:egg"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Snow",
+      "description": "Frigid use.",
+      "x": 254,
+      "y": 62,
+      "icon": {
+        "id": "minecraft:snow"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:water_bucket"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "minecraft:bucket"
+        },
+        {
+          "id": "minecraft:snow"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Spell Book",
+      "description": "As I create more spells I will need a central place to hold them for easy access. By draining my power, I am also able to bind it to me.",
+      "x": 202,
+      "y": 48,
+      "icon": {
+        "id": "arsmagica2:spellBook",
+        "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2,spellbookactiveslot:0}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBook",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2,spellbookactiveslot:0}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Geonach",
+      "description": " A beast that hides in the ores.",
+      "x": 54,
+      "y": 89,
+      "icon": {
+        "id": "mountainmobs:mountainegg",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Geonach",
+              "icon": {
+                "id": "mountainmobs:mountainegg",
+                "damage": 3
+              },
+              "mob": "mountainmobs.geonach",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:coal",
+          "amount": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Phantom",
+      "description": "A spirit that can pass through the walls.",
+      "x": 76,
+      "y": 87,
+      "icon": {
+        "id": "shadowmobs:shadowegg",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Phantom",
+              "icon": {
+                "id": "shadowmobs:shadowegg",
+                "damage": 1
+              },
+              "mob": "shadowmobs.phantom",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Clinks",
+      "description": "Beasts of knives and blades with sharp attacks.",
+      "x": 86,
+      "y": 68,
+      "icon": {
+        "id": "desertmobs:desertegg",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 0,
+        "hours": 3
+      },
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Clink",
+              "icon": {
+                "id": "desertmobs:desertegg",
+                "damage": 2
+              },
+              "mob": "desertmobs.clink",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "desertmobs:throwingscythe",
+          "amount": 5
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Mage Light 2",
+      "description": "A quick adjustment to the mage light and I have created a spell that can launch the light to latch onto the walls and roof of this cave.",
+      "x": 20,
+      "y": 146,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 320,
+        "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMage Light 2\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1033,],ShapeGroup_0:[5,]}"
+      },
+      "prerequisites": [
+        "Magelight"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 320,
+          "nbt": "{NumShapeGroups:1,ShapeGroupMeta_00:[0 bytes],NumStages:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,display:{Name:\"§bMage Light 2\"},suggestedName:\"\",spell_mod_version:\"1.4.0.008\",SpellModifierIDs_0:[],SpellComponentIDs_0:[1033,],ShapeGroup_0:[5,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Quarry",
+      "description": "By influencing my spell with gravity, I have created a dig spell that acts as a small quarry that can dig out a 3x3 cube below me.",
+      "x": 97,
+      "y": 122,
+      "icon": {
+        "id": "arsmagica2:spellBase",
+        "damage": 129,
+        "nbt": "{ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bQuarry\"},SpellModifierMeta_3_0_2:[0 bytes],spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1008,],SpellModifierMeta_3_0_0:[0 bytes],SpellModifierMeta_3_0_1:[0 bytes],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5003,5003,5003,],ShapeGroup_0:[10,0,]}"
+      },
+      "prerequisites": [
+        "AOE Dig"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 4,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:spellBase",
+          "damage": 129,
+          "nbt": "{ShapeGroupMeta_00:[0 bytes],NumStages:1,ShapeGroupMeta_01:[0 bytes],display:{Name:\"§bQuarry\"},SpellModifierMeta_3_0_2:[0 bytes],spell_mod_version:\"1.4.0.008\",SpellComponentIDs_0:[1008,],SpellModifierMeta_3_0_0:[0 bytes],SpellModifierMeta_3_0_1:[0 bytes],NumShapeGroups:1,CurrentShapeGroup:0,ShapeOrdinal_0:-1,suggestedName:\"\",SpellModifierIDs_0:[5003,5003,5003,],ShapeGroup_0:[10,0,]}"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -20
+        }
+      ]
+    },
+    {
+      "name": "Soulbound",
+      "description": "By expending my power I can create a book that has the ability to bind items to my very soul, sticking with me through death.",
+      "x": 276,
+      "y": 63,
+      "icon": {
+        "id": "minecraft:enchanted_book",
+        "nbt": "{StoredEnchantments:[0:{lvl:1s,id:101s}]}"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 5,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 5,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[0:{lvl:1s,id:101s}]}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -25
+        }
+      ]
+    },
+    {
+      "name": "Obsidian",
+      "description": "The monsters around me have a strange affinity to block breaking. A bit of dark power should allow me to cover my base for a bit of protection.",
+      "x": 232,
+      "y": 62,
+      "icon": {
+        "id": "minecraft:obsidian"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 3,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "minecraft:obsidian",
+          "amount": 10
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -15
+        }
+      ]
+    },
+    {
+      "name": "Condensing Skulls",
+      "description": "While wither skeletons do roam this place, their frequency is rather low and often do not drop what I desire. Requires 75 dark power.",
+      "x": 264,
+      "y": 81,
+      "icon": {
+        "id": "minecraft:skull",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:skull"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 9,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:skull",
+          "damage": 1
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -75
+        }
+      ]
+    },
+    {
+      "name": "Moonstone Duplication",
+      "description": "If I am able to obtain a single moonstone, I may be able to duplicate it with a little bit of dark power.",
+      "x": 221,
+      "y": 82,
+      "icon": {
+        "id": "arsmagica2:itemOre",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 7,
+          "amount": 4
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Etherium Duplication",
+      "description": "I may be able to duplicate liquid etherium if I am able to obtain a sample of it.",
+      "x": 243,
+      "y": 82,
+      "icon": {
+        "id": "arsmagica2:liquidEssenceBucket"
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:liquidEssenceBucket"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:liquidEssenceBucket"
+        },
+        {
+          "id": "arsmagica2:liquidEssence",
+          "amount": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Sunstone",
+      "description": "I can now duplicate sunstone, if I have one available.",
+      "x": 287,
+      "y": 82,
+      "icon": {
+        "id": "arsmagica2:itemOre",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            },
+            {
+              "item": {
+                "id": "arsmagica2:itemOre",
+                "damage": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "arsmagica2:itemOre",
+          "damage": 6,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Why Are You On Hardcore?",
+      "description": "This is only needed for players on Hardcore mode.",
+      "x": 286,
+      "y": 42,
+      "icon": {
+        "id": "HardcoreQuesting:hearts",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Soul Bound"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

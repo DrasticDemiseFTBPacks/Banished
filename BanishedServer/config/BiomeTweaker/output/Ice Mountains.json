@@ -8,10 +8,8 @@
   "Height Variation": 0.3,
   "Top Block": "minecraft:grass",
   "Filler Block": "minecraft:dirt",
-  "Actual Filler Block": "minecraft:stone",
-  "Liquid Filler Block": "minecraft:water",
-  "Grass Color": "Not Set",
-  "Foliage Color": "Not Set",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
   "Water Color": "16777215",
   "Temperature": 0.0,
   "Humidity": 0.5,
@@ -23,6 +21,7 @@
     "MOUNTAIN",
     "SNOWY"
   ],
+  "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
       "Entity Class": "lycanite.lycanitesmobs.arcticmobs.entity.EntityYeti",
@@ -199,5 +198,6 @@
       "Max Group Count": 8
     }
   ],
+  "Spawn Biome": false,
   "Tweaked": false
 }

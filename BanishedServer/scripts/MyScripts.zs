@@ -1,17 +1,10 @@
 recipes.remove(<RandomThings:spectreKey>);
-recipes.remove(<EE3:aludel>);
-recipes.remove(<EE3:calcinator>);
-recipes.remove(<EE3:calcinator>);
 recipes.remove(<arsmagica2:playerFocus>);
 recipes.remove(<mobinhibitor:MobInhibitors>);
 recipes.remove(<mobinhibitor:MobInhibitors:2>);
 recipes.remove(<mobinhibitor:MobInhibitors:1>);
-
-
-
-recipes.addShaped(<EE3:aludel>, [[<minecraft:gold_ingot>, <ore:stone>, <minecraft:gold_ingot>], [<minecraft:stone>, <aura:gemBlue>, <ore:stone>], [<aura:ingotWhite>, <aura:ingotWhite>, <aura:ingotWhite>]]);
-recipes.addShaped(<minecraft:double_plant:4>, [[<minecraft:dye:1>,<minecraft:dye:1>,<minecraft:dye:1>],[<minecraft:dye:1>,<minecraft:wheat_seeds>,<minecraft:dye:1>],[<minecraft:dye:1>,<minecraft:dye:1>,<minecraft:dye:1>]]);
-recipes.addShaped(<EE3:calcinator>, [[<Botania:manaResource>, null, <ore:ingotManasteel>], [<Thaumcraft:blockCosmeticSolid:7>, <aura:gemWhite>, <Thaumcraft:blockCosmeticSolid:7>], [<Thaumcraft:blockCosmeticSolid:7>, null, <Thaumcraft:blockCosmeticSolid:7>]]);
+recipes.remove(<ProjectE:condenser_mk1>);
+recipes.remove(<ProjectE:item.pe_philosophers_stone>);
 
 
 <minecraft:diamond_sword>.maxDamage = 1;
@@ -28,6 +21,10 @@ recipes.addShaped(<EE3:calcinator>, [[<Botania:manaResource>, null, <ore:ingotMa
 //Pylon Recipes
 //OutputStack, AuraInput, InputStack, 
 mods.auraCascade.Pylon.addRecipe(<arsmagica2:liquidEssenceBucket>, <aura:WHITE_AURA> * 500, <minecraft:water_bucket>);
+
+mods.auraCascade.Pylon.addRecipe(<ProjectE:condenser_mk1>, <aura:WHITE_AURA> * 500, <minecraft:diamond>);
+mods.auraCascade.Pylon.addRecipe(<ProjectE:item.pe_philosophers_stone>, <aura:WHITE_AURA> * 500, <minecraft:diamond>);
+
 mods.auraCascade.Pylon.addRecipe(<Botania:manaResource:15>, <aura:WHITE_AURA> * 1500, <minecraft:end_stone>);
 mods.auraCascade.Pylon.addRecipe(<Thaumcraft:blockCosmeticSolid>, <aura:WHITE_AURA> * 500, <minecraft:obsidian>);
 mods.auraCascade.Pylon.addRecipe(<minecraft:cactus>, <aura:GREEN_AURA> * 300, <minecraft:wheat_seeds>);

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Dark Power",
+    "neutral": "Charging",
+    "markers": [
+      {
+        "name": "Pathetic",
+        "value": 1
+      },
+      {
+        "name": "Weak",
+        "value": 5
+      },
+      {
+        "name": "Struggling",
+        "value": 10
+      },
+      {
+        "name": "Uneasy",
+        "value": 15
+      },
+      {
+        "name": "Normal",
+        "value": 20
+      },
+      {
+        "name": "Stable",
+        "value": 25
+      },
+      {
+        "name": "Empowered",
+        "value": 30
+      },
+      {
+        "name": "Exalted",
+        "value": 40
+      },
+      {
+        "name": "All-Powerful",
+        "value": 50
+      },
+      {
+        "name": "Ascending",
+        "value": 75
+      }
+    ]
+  }
+]

@@ -1,0 +1,1844 @@
+{
+  "name": "A Practical Magic",
+  "description": "Nodes of this world provide the answers.",
+  "quests": [
+    {
+      "name": "Getting Started",
+      "description": "Like all magics, I must document my findings. This book will let me reference what I already know and what there is left to learn.",
+      "x": 158,
+      "y": 11,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ingot"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemThaumonomicon",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ]
+    },
+    {
+      "name": "Basic Tools",
+      "description": "The first step is to create a wand and a device that lets me see nodes. Aura nodes are small gateways to the magical realm, and each one holds different essence.",
+      "x": 159,
+      "y": 49,
+      "icon": {
+        "id": "Thaumcraft:WandCasting",
+        "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
+      },
+      "prerequisites": [
+        "Getting Started"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCasting",
+                "nbt": "{aqua:2500,ignis:2500,terra:2500,ordo:2500,perditio:2500,aer:2500}"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumometer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry"
+        }
+      ]
+    },
+    {
+      "name": "Melting Pot",
+      "description": "A new form of crafting has arisen in the form of melting down items to their pure aspects. By pooling in a combination of aspects and throwing in a catalyst, I can create magical items.",
+      "x": 108,
+      "y": 68,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice"
+      },
+      "prerequisites": [
+        "Memory Fragment"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemLootBag",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Crafting",
+      "description": "Using the vis from my wand I can make small and simple items.",
+      "x": 217,
+      "y": 80,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Memory Fragment"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCrystal",
+          "damage": 6,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Infusions",
+      "description": "The creation of the infusion altar will allow me to push mundane items to their magical boundries. Though I should be careful, the deeper into the magics I go, the more dangerous it can be.",
+      "x": 158,
+      "y": 112,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Memory Fragment",
+        "Essential Essentia"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:skull",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Power Condensed",
+      "description": "At a high cost of power, I can attempt to tear open a spot in the magical realms, though what I get is a mystery.",
+      "x": 130,
+      "y": 50,
+      "icon": {
+        "id": "Thaumcraft:blockAiry"
+      },
+      "prerequisites": [
+        "Memory Fragment"
+      ],
+      "repeat": {
+        "type": "TIME",
+        "days": 1,
+        "hours": 0
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 5,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        },
+        {
+          "id": "Thaumcraft:blockAiry"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -25
+        }
+      ]
+    },
+    {
+      "name": "Memory Fragment",
+      "description": "While I am an entire dimension away from my research, I still remember the compound aspects.",
+      "x": 158,
+      "y": 79,
+      "icon": {
+        "id": "customitems:memory_fragment"
+      },
+      "prerequisites": [
+        "Basic Tools"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the memory fragment to gain one of each aspect, unlocking everything to be scanned.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemWispEssence",
+                "nbt": "{Aspects:[0:{amount:2,key:\"superbia\"}]}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:memory_fragment"
+        }
+      ]
+    },
+    {
+      "name": "Deconstructing",
+      "description": "As I run out of items to scan I am quickly running out of research points. However, I may learn more by breaking the items apart in a deconstruction table.",
+      "x": 235,
+      "y": 39,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 14
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemThaumometer"
+        },
+        {
+          "id": "minecraft:anvil"
+        }
+      ]
+    },
+    {
+      "name": "Essential Essentia",
+      "description": "I can create a device that will burn down items into their basic essentia parts! While this essentia has little use on its own, I feel that it will come in handy very soon.",
+      "x": 188,
+      "y": 96,
+      "icon": {
+        "id": "Thaumcraft:blockMetalDevice",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockMetalDevice",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockJar",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Seeing It All",
+      "description": "As I explore around, it is important to see the nodes around me. These goggles will make sure I can see it all! They also seem to have the ability to be combined with other sets of magical armors.",
+      "x": 258,
+      "y": 41,
+      "icon": {
+        "id": "Thaumcraft:ItemGoggles"
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGoggles"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemLootBag",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Magical Silk",
+      "description": "By infusing vis into a bit of string I can create a magical fabric. Useless by itself, but it appears to make me more efficient at magical crafting.",
+      "x": 258,
+      "y": 90,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 7,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Super Smelting",
+      "description": "The Infernal Furnace is a hungry being that seems to enjoy consuming basic raw food and various ores. It seems to work very slowly, perhaps these will speed it up a bit.",
+      "x": 270,
+      "y": 61,
+      "icon": {
+        "id": "Thaumcraft:blockWoodenDevice"
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockWoodenDevice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockWoodenDevice",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Arcane Boreing",
+      "description": "I am in frequent need of metal resources and this arcane bore is able to mine for me! It can be sped up when fed essentia, however it will work simply by itself.",
+      "x": 199,
+      "y": 156,
+      "icon": {
+        "id": "Thaumcraft:blockWoodenDevice",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockWoodenDevice",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockWoodenDevice",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:BlockJarFilledItem",
+          "nbt": "{Aspects:[0:{amount:64,key:\"perditio\"}]}"
+        },
+        {
+          "id": "Thaumcraft:BlockJarFilledItem",
+          "nbt": "{Aspects:[0:{amount:64,key:\"perditio\"}]}"
+        }
+      ]
+    },
+    {
+      "name": "A Big Tree",
+      "description": "While it is clear that I am not going to find magical trees here, the aura holds the answer.",
+      "x": 134,
+      "y": 96,
+      "icon": {
+        "id": "Thaumcraft:blockCustomPlant"
+      },
+      "prerequisites": [
+        "Memory Fragment"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:WandRod"
+        }
+      ]
+    },
+    {
+      "name": "Slightly Big Tree",
+      "description": "Much like the greatwood tree, this tree is an exceptional focus of magic. It also seems to sometimes hold nodes in its wood. ",
+      "x": 102,
+      "y": 99,
+      "icon": {
+        "id": "Thaumcraft:blockCustomPlant",
+        "damage": 1
+      },
+      "prerequisites": [
+        "A Big Tree"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockCustomPlant",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 3,
+          "amount": 15
+        },
+        {
+          "id": "Thaumcraft:blockCustomPlant",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Magical Light",
+      "description": "The combination of lux essentia has brought about a form of pure light! While it doesn\u0027t appear to be hot to the touch, it is able to heat the crucible. This is a simple light, but I feel that it will have many practical applications in the future.",
+      "x": 46,
+      "y": 20,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Growing Ink",
+      "description": "It appears that this cave is too hostile for squid to exist. However, it appears that infusing a flower with tenebrae has created a flower darker than the night and it seems to spread like a weed.",
+      "x": 25,
+      "y": 77,
+      "icon": {
+        "id": "ForbiddenMagic:UmbralBush"
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ForbiddenMagic:UmbralBush"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 94,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Magic Metal",
+      "description": "I can liven up the mundane metals by using a small bit of magical aspect. Thaumium appears to be slightly better than iron when used in basic tools, however I feel that thaumium will have many more uses later on.",
+      "x": 70,
+      "y": 9,
+      "icon": {
+        "id": "Thaumcraft:ItemResource",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemResource",
+                "damage": 2
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemPickThaumium"
+        }
+      ]
+    },
+    {
+      "name": "Picky Enchanting",
+      "description": "The dark totems of the overworld remind me of a powerful form of enchanting. The Osmotic Enchanter. The Osmotic Enchanter unlocks powerful new enchants and a way to specify which enchantment I would like through the use of vis.",
+      "x": 187,
+      "y": 175,
+      "icon": {
+        "id": "ThaumicTinkerer:enchanter"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:enchanter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry"
+        }
+      ]
+    },
+    {
+      "name": "Everfull",
+      "description": "In a combination of aqua, vacuos and a pinch of magic, I have created an urn that always fills!",
+      "x": 177,
+      "y": 156,
+      "icon": {
+        "id": "ThaumicExploration:everfullUrn"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicExploration:everfullUrn"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Botania:openBucket"
+        }
+      ]
+    },
+    {
+      "name": "Node Stability",
+      "description": "While aura nodes provide the key to magical creations, they can also provide fragments of their pure energy to certain machines and gadgets. This can be done by making an energized node. ",
+      "x": 207,
+      "y": 44,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 9
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 11
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Upgraded Focus",
+      "description": "The wand foci have proven very useful, however there is still much to be desired. By the use of vis and experience, I can upgrade my wand foci to be stronger or more efficient.",
+      "x": 213,
+      "y": 12,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 13
+      },
+      "prerequisites": [
+        "Node Stability"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 13
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockStoneDevice",
+          "damage": 11
+        },
+        {
+          "id": "Thaumcraft:blockStoneDevice",
+          "damage": 9
+        }
+      ]
+    },
+    {
+      "name": "Animal Infusions",
+      "description": "The mundane creatures of this cave world have very little use to me now. However, I have an idea. By creating a vat to hold an animal, I can funnel in essentia to create a new animal.",
+      "x": 199,
+      "y": 118,
+      "icon": {
+        "id": "ThaumicHorizons:modMatrix"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicHorizons:modMatrix"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockCrystal",
+          "damage": 6,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Don\u0027t Drop It",
+      "description": "My mind is unclear and the whispers are getting louder. Perhaps there is something that can scrub away the warp...",
+      "x": 25,
+      "y": 44,
+      "icon": {
+        "id": "Thaumcraft:ItemSanitySoap"
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemSanitySoap"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemSanitySoap",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Dark Secrets",
+      "description": "By trapping a zombie brain into a jar I have created an animated figure. Although it is a bit creepy, it can store EXP that drops around it for later when I need it.",
+      "x": 156,
+      "y": 155,
+      "icon": {
+        "id": "Thaumcraft:blockJar",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockJar",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockJar",
+          "damage": 1
+        },
+        {
+          "id": "Thaumcraft:blockMetalDevice",
+          "damage": 8
+        }
+      ]
+    },
+    {
+      "name": "Golemancy",
+      "description": "As I am alone here, I could use a hand. Or several. I have found a recipe to animate certain types of blocks into a somewhat living creature! These golems will follow orders and do tasks handed to them based on their golem core.",
+      "x": 39,
+      "y": 117,
+      "icon": {
+        "id": "Thaumcraft:ItemGolemPlacer"
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemGolemPlacer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:throw_me_for_golemancers_bell"
+        },
+        {
+          "id": "Thaumcraft:ItemGolemCore",
+          "damage": 7
+        }
+      ]
+    },
+    {
+      "name": "Necromatic Summonings",
+      "description": "The deeper side of thaumaturgy offers powerful items. But at what cost? I have created a tablet that can summon almost any creature at a simple combination of essentia.",
+      "x": 281,
+      "y": 42,
+      "icon": {
+        "id": "ThaumicTinkerer:spawner"
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:spawner"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemEssence",
+          "damage": 1,
+          "amount": 8,
+          "nbt": "{Aspects:[0:{amount:8,key:\"exanimis\"}]}"
+        },
+        {
+          "id": "Thaumcraft:ItemEssence",
+          "damage": 1,
+          "amount": 8,
+          "nbt": "{Aspects:[0:{amount:8,key:\"spiritus\"}]}"
+        },
+        {
+          "id": "Thaumcraft:ItemEssence",
+          "damage": 1,
+          "amount": 8,
+          "nbt": "{Aspects:[0:{amount:8,key:\"ignis\"}]}"
+        }
+      ]
+    },
+    {
+      "name": "Magical Robes",
+      "description": "Creating a robe-like armor out of the enchanted fabric appears to give a discount on the amount of vis consumed! Though, using it as armor seems a bit silly.",
+      "x": 290,
+      "y": 93,
+      "icon": {
+        "id": "Thaumcraft:ItemChestplateRobe"
+      },
+      "prerequisites": [
+        "Magical Silk"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemChestplateRobe"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemLeggingsRobe"
+              }
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:ItemBootsRobe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_block"
+        }
+      ]
+    },
+    {
+      "name": "Ender Rift",
+      "description": "As I travel through this cave I am noticing how inefficient it is to continually go back for more space. I can create a rift that will allow me to access my ender inventory from a small cost of vis.",
+      "x": 268,
+      "y": 13,
+      "icon": {
+        "id": "ThaumicTinkerer:focusEnderChest"
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:focusEnderChest"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ThaumicHorizons:focusLiquefaction"
+        }
+      ]
+    },
+    {
+      "name": "Status Cleansing",
+      "description": "These new monsters have powers unlike any other, and the mere touch of them brings on nasty effects. I can create a talisman that will cleanse me of almost every status, however it has few uses.",
+      "x": 133,
+      "y": 149,
+      "icon": {
+        "id": "ThaumicTinkerer:cleansingTalisman"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:cleansingTalisman"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:quartz_ore",
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "name": "Nourishing",
+      "description": "As my ability to regen quickly sways in the midst of battle, it is important to keep my hunger full. This talisman has a hunger for basic foods, and in return feeds me as I need it without waste.",
+      "x": 114,
+      "y": 166,
+      "icon": {
+        "id": "ThaumicExploration:talismanFood",
+        "nbt": "{saturation:0.0f,food:0.0f}"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicExploration:talismanFood",
+                "nbt": "{saturation:0.0f,food:0.0f}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:cooked_beef",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Fixing the Broken",
+      "description": "As I go about my travels I notice how quickly I am going through pickaxes and swords. The thaumic restorer can repair nearly any item!",
+      "x": 223,
+      "y": 157,
+      "icon": {
+        "id": "ThaumicTinkerer:repairer"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ThaumicTinkerer:repairer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemEssence",
+          "damage": 1,
+          "amount": 8,
+          "nbt": "{Aspects:[0:{amount:8,key:\"instrumentum\"}]}"
+        }
+      ]
+    },
+    {
+      "name": "Wrathful Summonings",
+      "description": "The dark magics whisper of a way to summon creatures right before my eyes! The wrath cage works much faster than those mundane spawners, and can be customized to how I need it.",
+      "x": 234,
+      "y": 177,
+      "icon": {
+        "id": "ForbiddenMagic:WrathCage"
+      },
+      "prerequisites": [
+        "Infusions"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ForbiddenMagic:WrathCage"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ForbiddenMagic:MobCrystal",
+          "nbt": "{mob:\"LavaSlime\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ForbiddenMagic:MobCrystal",
+          "nbt": "{mob:\"SpecialMobs.CursedEnderman\"}"
+        },
+        {
+          "id": "ForbiddenMagic:MobCrystal",
+          "nbt": "{mob:\"SpecialMobs.IcyEnderman\"}"
+        }
+      ]
+    },
+    {
+      "name": "More Cobble",
+      "description": "While I am surely not short on cobble, this machine can create it passively saving me time.",
+      "x": 277,
+      "y": 117,
+      "icon": {
+        "id": "WitchingGadgets:WG_WoodenDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Arcane Crafting"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "WitchingGadgets:WG_WoodenDevice",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemPickaxeElemental"
+        }
+      ]
+    },
+    {
+      "name": "Liquid Death",
+      "description": "The Venenum aspect, not quite death but it relates closely through the act of poison. I have created a way to liquify death itself into a dark purple form that melts things right before my eyes!",
+      "x": 65,
+      "y": 103,
+      "icon": {
+        "id": "Thaumcraft:ItemBucketDeath"
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemBucketDeath"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemBucketPure",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Scrubbing Away",
+      "description": "It is important to relax, away from the fears of warp. By feeding the machine water and bath soaps, it can create a pool of relaxation.",
+      "x": 70,
+      "y": 47,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 12
+      },
+      "prerequisites": [
+        "Melting Pot"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 12
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemBathSalts",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Saving for Later",
+      "description": "Using entire items in a crucible or for filling essentia jars can often be wasteful as not all of the aspects are always used. I have discovered a way to crystallize the aspects into a shard of pure essentia that I can use for later.",
+      "x": 225,
+      "y": 112,
+      "icon": {
+        "id": "Thaumcraft:blockTube",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Essential Essentia"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTube",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockTube",
+          "damage": 7
+        },
+        {
+          "id": "Thaumcraft:blockMetalDevice",
+          "damage": 14,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Iter",
+      "description": "Global recall.",
+      "x": 28,
+      "y": 150,
+      "icon": {
+        "id": "customitems:iter"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the item.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "longDescription": "Throw the item.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:iter"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Vinculum",
+      "description": "Trapped.",
+      "x": 16,
+      "y": 169,
+      "icon": {
+        "id": "customitems:vinculum"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the item.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "longDescription": "Throw the item.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:vinculum"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Ira",
+      "description": "A true leader.",
+      "x": 48,
+      "y": 148,
+      "icon": {
+        "id": "customitems:ira"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the item.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "longDescription": "Throw the item.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:ira"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Superbia",
+      "description": "Magical construct.",
+      "x": 41,
+      "y": 170,
+      "icon": {
+        "id": "customitems:superbia"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the item.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "longDescription": "Throw the item.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:superbia"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Vitium",
+      "description": "Magical destruction.",
+      "x": 63,
+      "y": 167,
+      "icon": {
+        "id": "customitems:vitium"
+      },
+      "prerequisites": [
+        "Unnamed"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "longDescription": "Throw the item.",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "longDescription": "Throw the item.",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 6,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:vitium"
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -30
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 86,
+      "y": 137,
+      "icon": {
+        "id": "HardcoreQuesting:quest_book"
+      },
+      "prerequisites": [
+        "Golemancy",
+        "Liquid Death",
+        "Slightly Big Tree",
+        "Nourishing",
+        "Dark Secrets",
+        "Status Cleansing",
+        "Picky Enchanting",
+        "Everfull",
+        "Arcane Boreing",
+        "Fixing the Broken",
+        "Wrathful Summonings",
+        "Saving for Later",
+        "Animal Infusions",
+        "Don\u0027t Drop It",
+        "Growing Ink",
+        "Magical Light",
+        "Magic Metal",
+        "Upgraded Focus",
+        "Ender Rift",
+        "Seeing It All",
+        "Necromatic Summonings",
+        "Super Smelting",
+        "Magical Robes",
+        "More Cobble"
+      ],
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "HardcoreQuesting:quest_book"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Broken Item",
+      "description": "The Golemancers bell is glitched. Here is another one.",
+      "x": 12,
+      "y": 103,
+      "icon": {
+        "id": "Thaumcraft:GolemBell"
+      },
+      "prerequisites": [
+        "Golemancy"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stick"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:quartz"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "customitems:throw_me_for_golemancers_bell"
+        }
+      ]
+    },
+    {
+      "name": "Hatred Condensed",
+      "description": "The power surging through me whispers the secrets of shards from the old creatures of the lesser dimensions. I am unable to visit those dimensions now, but perhaps I can create their shards from power.",
+      "x": 100,
+      "y": 44,
+      "icon": {
+        "id": "ThaumicTinkerer:kamiResource",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Power Condensed"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 2,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ThaumicTinkerer:kamiResource",
+          "damage": 6
+        },
+        {
+          "id": "ThaumicTinkerer:kamiResource",
+          "damage": 7
+        },
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "name": "Sin Condensed I",
+      "description": "The dark power makes it easy to condense shards into specific types of wickedness.",
+      "x": 124,
+      "y": 25,
+      "icon": {
+        "id": "ForbiddenMagic:GluttonyShard"
+      },
+      "prerequisites": [
+        "Power Condensed"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ForbiddenMagic:GluttonyShard"
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard"
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 1
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 3
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    },
+    {
+      "name": "Sin Condensed II",
+      "description": "The dark power makes it easy to condense shards into specific types of wickedness.",
+      "x": 95,
+      "y": 13,
+      "icon": {
+        "id": "ForbiddenMagic:NetherShard",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Sin Condensed I"
+      ],
+      "repeat": {
+        "type": "INSTANT"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "arsmagica2:playerFocus",
+                "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "REPUTATION",
+          "reputation": [
+            {
+              "reputation": 0,
+              "lower": 1,
+              "inverted": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "arsmagica2:playerFocus",
+          "nbt": "{ench:[0:{lvl:1s,id:101s}],RepairCost:2}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 2
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 6
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 4
+        },
+        {
+          "id": "ForbiddenMagic:NetherShard",
+          "damage": 5
+        }
+      ],
+      "reputationrewards": [
+        {
+          "reputation": 0,
+          "value": -5
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
