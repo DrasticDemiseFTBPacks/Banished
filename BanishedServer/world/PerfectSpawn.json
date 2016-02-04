@@ -5,5 +5,5 @@
    "spawnZ": 404,
    "exactSpawn": true,
    "forceBed": true,
-   "spawnProtection": true
+   "spawnProtection": false
 }

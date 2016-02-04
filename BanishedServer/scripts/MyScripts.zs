@@ -22,7 +22,7 @@ recipes.remove(<ProjectE:item.pe_philosophers_stone>);
 //OutputStack, AuraInput, InputStack, 
 mods.auraCascade.Pylon.addRecipe(<arsmagica2:liquidEssenceBucket>, <aura:WHITE_AURA> * 500, <minecraft:water_bucket>);
 
-mods.auraCascade.Pylon.addRecipe(<ProjectE:condenser_mk1>, <aura:WHITE_AURA> * 500, <minecraft:diamond>);
+mods.auraCascade.Pylon.addRecipe(<ProjectE:condenser_mk1>, <aura:WHITE_AURA> * 500, <ProjectE:alchemical_chest>);
 mods.auraCascade.Pylon.addRecipe(<ProjectE:item.pe_philosophers_stone>, <aura:WHITE_AURA> * 500, <minecraft:diamond>);
 
 mods.auraCascade.Pylon.addRecipe(<Botania:manaResource:15>, <aura:WHITE_AURA> * 1500, <minecraft:end_stone>);
@@ -34,7 +34,12 @@ mods.auraCascade.Pylon.addRecipe(<minecraft:end_stone> * 4, <aura:WHITE_AURA> * 
 
 mods.auraCascade.Pylon.addRecipe(<Thaumcraft:blockCustomPlant>, <aura:GREEN_AURA> * 5000, <minecraft:sapling>, <aura:WHITE_AURA> * 1000,<Thaumcraft:ItemResource:2>, <aura:WHITE_AURA>*1000,<Thaumcraft:ItemResource:2>, <aura:WHITE_AURA>*1000,<Thaumcraft:ItemResource:2>);
 
+
 mods.auraCascade.Pylon.addRecipe(<Thaumcraft:blockCustomPlant:1>, <aura: BLUE_AURA>*5000, <minecraft:diamond_block>, <aura:WHITE_AURA> * 2000, <Thaumcraft:ItemResource:3>, <aura:WHITE_AURA> * 2000, <Thaumcraft:ItemResource:3> , <aura:WHITE_AURA> * 2000, <Thaumcraft:ItemResource:3>);
+
+mods.auraCascade.Pylon.addRecipe(<Thaumcraft:blockCustomPlant:2>, <aura:GREEN_AURA> * 5000, <minecraft:wheat_seeds>, <aura:WHITE_AURA> * 1000,<Thaumcraft:ItemResource:3>, <aura:WHITE_AURA>*1000,<Thaumcraft:ItemResource:3>, <aura:WHITE_AURA>*1000,<Thaumcraft:ItemResource:3>);
+
+mods.auraCascade.Pylon.addRecipe(<Thaumcraft:blockCustomPlant:3>, <aura:GREEN_AURA> * 5000, <minecraft:wheat_seeds>, <aura:WHITE_AURA> * 1000,<minecraft:blaze_powder>, <aura:WHITE_AURA>*1000,<minecraft:blaze_powder>, <aura:WHITE_AURA>*1000,<minecraft:blaze_powder>);
 
 mods.auraCascade.Pylon.addRecipe(<arsmagica2:TarmaRoot>, <aura:WHITE_AURA> * 500, <minecraft:stone>, <aura:WHITE_AURA> *500, <minecraft:stone>, <aura:WHITE_AURA> * 500, <minecraft:stone>, <aura:WHITE_AURA> * 500, <minecraft:wheat_seeds>);
 
